@@ -29,6 +29,7 @@ cc-metrics:languages
   dqv:inDimension ldqd:availability ;
   qb:order 2 .
 
+
 cc-metrics:online
   a dqv:Metric ;
   skos:prefLabel "Downloadable or accessible online"@en ;

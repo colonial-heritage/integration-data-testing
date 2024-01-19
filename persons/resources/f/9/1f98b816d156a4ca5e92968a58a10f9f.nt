@@ -1,0 +1,5 @@
+<https://example.org/persons/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#name> "Beatrice Vlieger" .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#birthPlace> "Rotterdam" .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#isPartOf> "Dataset 4" .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#publisher> "Museum" .

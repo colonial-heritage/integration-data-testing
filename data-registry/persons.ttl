@@ -3,198 +3,339 @@
 ###############################
 
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix pnv: <https://w3id.org/pnv#> .
+@prefix la: <https://linked.art/ns/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.org/persons/1>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Michiel Adriaensz. de Ruyter" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Vlissingen" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Michiel Adriaensz. de Ruyter" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Michiel Adriaensz. de Ruyter" ;
   ] ;
-  schema:birthDate "1607-03-24"^^xsd:date ;
-  schema:deathPlace [
-    a schema:Place ;
-    schema:name "Syracuse" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1607-03-24"^^xsd:date ;
+      crm:P82b_end_of_the_end "1607-03-24"^^xsd:date ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Vlissingen" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Vlissingen" ;
+      ] ;
+    ] ;
   ] ;
-  schema:deathDate "1676-04-29"^^xsd:date ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Michiel" ;
-    pnv:patronym "Adriaensz." ;
-    pnv:surnamePrefix "de" ;
-    pnv:baseSurname "Ruyter" ;
-    pnv:surname "de Ruyter" ;
-    pnv:literalName "Michiel Adriaensz. de Ruyter" ;
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1676-04-29"^^xsd:date ;
+      crm:P82b_end_of_the_end "1676-04-29"^^xsd:date ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Syracuse" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Syracuse" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/1> .
+  la:member_of <https://example.org/datasets/1> .
 
 <https://example.org/persons/2>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Jan de Vries" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Vlissienge" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Jan de Vries" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Jan de Vries" ;
   ] ;
-  schema:birthDate "1645"^^xsd:gYear ;
-  schema:deathPlace [
-    a schema:Place ;
-    schema:name "Amersfoort" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1645"^^xsd:gYear ;
+      crm:P82b_end_of_the_end "1645"^^xsd:gYear ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Vlissienge" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Vlissingen" ;
+      ] ;
+    ] ;
   ] ;
-  schema:deathDate "1701"^^xsd:gYear ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Jan" ;
-    pnv:surnamePrefix "de" ;
-    pnv:baseSurname "Vries" ;
-    pnv:surname "de Vries" ;
-    pnv:literalName "Jan de Vries" ;
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1701"^^xsd:gYeardate ;
+      crm:P82b_end_of_the_end "1701"^^xsd:gYear ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Amersfoort" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Amersfoort" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/1> .
+  la:member_of <https://example.org/datasets/1> .
 
 <https://example.org/persons/3>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Kees Jansen" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Groningen" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Kees Jansen" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Kees Jansen" ;
   ] ;
-  schema:birthDate "1645-12-05"^^xsd:date ;
-  schema:deathPlace [
-    a schema:Place ;
-    schema:name "Jakarta" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1645-12-05"^^xsd:date ;
+      crm:P82b_end_of_the_end "1645-12-05"^^xsd:date ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Groningen" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Groningen" ;
+      ] ;
+    ] ;
   ] ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Kees" ;
-    pnv:baseSurname "Jansen" ;
-    pnv:surname "Jansen" ;
-    pnv:literalName "Kees Jansen" ;
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Jakarta" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Jakarta" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/3> .
+  la:member_of <https://example.org/datasets/3> .
 
 <https://example.org/persons/4>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Gert Nooitgedacht" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Batavia" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Gert Nooitgedacht" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Gert Nooitgedacht" ;
   ] ;
-  schema:birthDate "1815-09-27"^^xsd:date ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Gert" ;
-    pnv:baseSurname "Nooitgedacht" ;
-    pnv:surname "Nooitgedacht" ;
-    pnv:literalName "Gert Nooitgedacht" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1815-09-27"^^xsd:date ;
+      crm:P82b_end_of_the_end "1815-09-27"^^xsd:date ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Batavia" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Batavia" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/3> .
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Jakarta" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Jakarta" ;
+      ] ;
+    ] ;
+  ] ;
+  la:member_of <https://example.org/datasets/3> .
 
 <https://example.org/persons/5>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Beatrice Vlieger" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Rotterdam" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Beatrice Vlieger" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Beatrice Vlieger" ;
   ] ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Beatrice" ;
-    pnv:baseSurname "Vlieger" ;
-    pnv:surname "Vlieger" ;
-    pnv:literalName "Beatrice Vlieger" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Rotterdam" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Rotterdam" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/4> .
+  la:member_of <https://example.org/datasets/4> .
 
 <https://example.org/persons/6>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Geeske van Châtellerault" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "New York" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Geeske van Châtellerault" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Geeske van Châtellerault" ;
   ] ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Geeske" ;
-    pnv:surnamePrefix "van" ;
-    pnv:baseSurname "Châtellerault" ;
-    pnv:surname "van Châtellerault" ;
-    pnv:literalName "Geeske van Châtellerault" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "New York" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "New York" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/4> .
+  la:member_of <https://example.org/datasets/4> .
 
 <https://example.org/persons/7>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Theodora Noord" ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Theodora" ;
-    pnv:baseSurname "Noord" ;
-    pnv:surname "Noord" ;
-    pnv:literalName "Theodora Noord" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Theodora Noord" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Theodora Noord" ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/5> .
+  la:member_of <https://example.org/datasets/5> .
 
 <https://example.org/persons/8>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Welmoed Zuid" ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Welmoed" ;
-    pnv:baseSurname "Zuid" ;
-    pnv:surname "Zuid" ;
-    pnv:literalName "Welmoed Zuid" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Welmoed Zuid" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Welmoed Zuid" ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/5> .
+  la:member_of <https://example.org/datasets/5> .
 
 <https://example.org/persons/9>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Karel van 't Westen" ;
-  schema:birthPlace [
-    a schema:Place ;
-    schema:name "Rotterdam" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Karel van 't Westen" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Karel van 't Westen" ;
   ] ;
-  schema:birthDate "1645-02"^^xsd:gYearMonth ;
-  schema:deathPlace [
-    a schema:Place ;
-    schema:name "Amersfoort" ;
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1645-02"^^xsd:gYearMonth ;
+      crm:P82b_end_of_the_end "1645-02"^^xsd:gYearMonth ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Rotterdam" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Rotterdam" ;
+      ] ;
+    ] ;
   ] ;
-  schema:deathDate "1701-07"^^xsd:gYearMonth ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Karel" ;
-    pnv:surnamePrefix "van 't" ;
-    pnv:baseSurname "Westen" ;
-    pnv:surname "van 't Westen" ;
-    pnv:literalName "Karel van 't Westen" ;
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1701-07"^^xsd:gYearMonth ;
+      crm:P82b_end_of_the_end "1701-07"^^xsd:gYearMonth ;
+    ] ;
+    crm:P7_took_place_at [
+      a crm:E53_Place ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
+      crm:P1_is_identified_by [
+        a crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Amersfoort" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+        crm:P190_has_symbolic_content "Amersfoort" ;
+      ] ;
+    ] ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/1> .
+  la:member_of <https://example.org/datasets/1> .
 
 <https://example.org/persons/10>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Ida Oost" ;
-  schema:birthDate "invalid" ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Ida" ;
-    pnv:baseSurname "Oost" ;
-    pnv:surname "Oost" ;
-    pnv:literalName "Ida Oost" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Ida Oost" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Ida Oost" ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/1> .
+  crm:P98i_was_born [
+    a crm:E67_Birth ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "invalid" ;
+      crm:P82b_end_of_the_end "invalid" ;
+    ] ;
+  ] ;
+  la:member_of <https://example.org/datasets/1> .
 
 <https://example.org/persons/11>
-  a schema:Person, pnv:Person, crm:E21_Person ;
+  a crm:E21_Person ;
   rdfs:label "Julienne Noordwest" ;
-  schema:deathDate "invalid" ;
-  pnv:hasName [
-    a pnv:PersonName ;
-    pnv:givenName "Julienne" ;
-    pnv:baseSurname "Noordwest" ;
-    pnv:surname "Noordwest" ;
-    pnv:literalName "Julienne Noordwest" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Julienne Noordwest" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Julienne Noordwest" ;
   ] ;
-  schema:isPartOf <https://example.org/datasets/3> .
+  crm:P100i_died_in [
+    a crm:E69_Death ;
+    crm:P4_has_time-span [
+      a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "invalid" ;
+      crm:P82b_end_of_the_end "invalid" ;
+    ] ;
+  ] ;
+  la:member_of <https://example.org/datasets/3> .

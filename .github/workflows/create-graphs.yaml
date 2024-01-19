@@ -74,11 +74,11 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
-          mkdir -p "$RUNNER_TEMP/persons"
-          test -f ./persons/data/data.tar.zst && tar --zstd -xf ./persons/data/data.tar.zst -C "$RUNNER_TEMP/persons"
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./persons/data/data.tar.zst && tar --zstd -xf ./persons/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./persons/resources \
-            --data-file "$RUNNER_TEMP/persons/data.sqlite" \
+            --data-file "$RUNNER_TEMP/data.sqlite" \
             --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
             --iterate-query-file ./persons/queries/iterate.rq \
             --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
@@ -95,7 +95,7 @@ jobs:
         run: |
           cd ./data
           mkdir -p ./persons/data
-          test -f "$RUNNER_TEMP/persons/data.sqlite" && tar --zstd -cf ./persons/data/data.tar.zst -C "$RUNNER_TEMP/persons" data.sqlite
+          test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./persons/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .

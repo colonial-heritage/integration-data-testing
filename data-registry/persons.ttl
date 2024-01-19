@@ -77,7 +77,7 @@
         a crm:E33_E41_Linguistic_Appellation ;
         rdfs:label "Vlissienge" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
-        crm:P190_has_symbolic_content "Vlissingen" ;
+        crm:P190_has_symbolic_content "Vlissienge" ;
       ] ;
     ] ;
   ] ;

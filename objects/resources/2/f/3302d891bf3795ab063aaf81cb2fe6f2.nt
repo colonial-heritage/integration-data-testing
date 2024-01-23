@@ -1,71 +1,24 @@
 <https://example.org/objects/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#additionalType> "Drawing" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#about> "Castle" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#about> "Cottage" .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#about> "Castle" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#identifier> "9012" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#name> "Object 3" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#description> "Ut dictum elementum augue sit amet sodales. Vivamus viverra ligula sed arcu cursus sagittis. Donec ac placerat lacus." .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#material> "Paper" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#material> "Ink" .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#material> "Paper" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#owner> "Library" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#yearCreatedStart> "1725"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#yearCreatedEnd> "1736"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Dutch East Indies" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesien"@nds .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Nam Dương"@vi .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesi"@kw .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#locationCreated> "Java" .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreated> "Indonesia" .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedEn> "Indonesia"@en .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedNl> "Indonesië"@nl .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedNl> "Republiek Indonesië"@nl .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "اندونېزيا"@ps .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Java"@en .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "bidgu'e"@jbo .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "اندونيسيا"@ar .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Pulau Djawa" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Initonīhia"@mi .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonezia"@io .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Républik Indonésia"@su .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "இந்தோனேஷியா"@ta .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Ява"@ru .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "इन्दोनेशिया"@sa .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Netherland India" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "ھىندۇنېزىيە"@ug .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Индонези"@cv .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesië"@li .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Netherlands Indies" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indunisya"@qu .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@jv .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republiek de Verenigde Staten van Indonesië" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "ইন্দোনেশিয়া"@bn .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@la .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Yndoneezje"@fy .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republik Indonesia" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indoneska"@hsb .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "ประเทศอินโดนีเซีย"@th .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "United States of Indonesia" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@nn .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@na .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Giava"@it .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republik Indonesia Serikat" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonésia"@su .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesië" .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Java"@en .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@ast .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Pulau Jawa"@id .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Lindäna-Seänuäns"@vo .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonezia"@sq .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@oc .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Endonezya"@ku .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "ఇండోనేసియా"@te .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesiya"@ku .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@an .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indunesia"@scn .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indes orientales néerlandaises"@fr .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Endonezi"@ht .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "สาธารณรัฐอินโดนีเซีย"@th .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@ilo .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonézia"@tet .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@pam .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@tl .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#publisher> "Library" .

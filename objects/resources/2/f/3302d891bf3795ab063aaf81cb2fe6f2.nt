@@ -3,7 +3,6 @@
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#about> "Cottage" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#about> "Castle" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#identifier> "9012" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#name> "Object 3" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#description> "Ut dictum elementum augue sit amet sodales. Vivamus viverra ligula sed arcu cursus sagittis. Donec ac placerat lacus." .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#material> "Ink" .
@@ -13,12 +12,13 @@
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#yearCreatedEnd> "1736"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#locationCreated> "Java" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreated> "Indonesia" .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedEn> "Indonesia"@en .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedNl> "Indonesië"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreatedNl> "Republiek Indonesië"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
-<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Java"@en .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreated_en> "Indonesia"@en .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreated_nl> "Republiek Indonesië"@nl .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#countryCreated_nl> "Indonesië"@nl .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Java"@en .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
+<https://example.org/objects/3> <https://colonialcollections.nl/schema#name> "Object 3" .
 <https://example.org/objects/3> <https://colonialcollections.nl/schema#publisher> "Library" .

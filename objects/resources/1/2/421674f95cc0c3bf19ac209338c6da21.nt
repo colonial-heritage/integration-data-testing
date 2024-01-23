@@ -2,11 +2,10 @@
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#additionalType> "Canvas Painting" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#about> "Celebrations" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#identifier> "7890" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Oilpaint" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#technique> "Albumen process" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#creator> "Geeske van Châtellerault" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#owner> "Museum" .
@@ -14,6 +13,7 @@
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#yearCreatedEnd> "1902"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#locationCreated> "Pulau Sebang" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated> "Malaysia" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreatedEn> "Malaysia"@en .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreatedNl> "Maleisië"@nl .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_en> "Malaysia"@en .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_nl> "Maleisië"@nl .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher> "Museum" .

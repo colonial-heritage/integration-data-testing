@@ -4,5 +4,7 @@
 <https://example.org/persons/2> <https://colonialcollections.nl/schema#birthDate> "1645"^^<http://www.w3.org/2001/XMLSchema#gYear> .
 <https://example.org/persons/2> <https://colonialcollections.nl/schema#birthYear> "1645"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/persons/2> <https://colonialcollections.nl/schema#deathPlace> "Amersfoort" .
+<https://example.org/persons/2> <https://colonialcollections.nl/schema#deathDate> "1701"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<https://example.org/persons/2> <https://colonialcollections.nl/schema#deathYear> "1701"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/persons/2> <https://colonialcollections.nl/schema#isPartOf> "Dataset 1"@en .
 <https://example.org/persons/2> <https://colonialcollections.nl/schema#publisher> "Museum" .

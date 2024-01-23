@@ -1,0 +1,57 @@
+<https://example.org/objects/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#additionalType> "Canvas Painting" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#about> "Celebrations" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#identifier> "7890" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Oilpaint" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#technique> "Albumen process" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#creator> "Geeske van Châtellerault" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#owner> "Museum" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#yearCreatedStart> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#yearCreatedEnd> "1902"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Federation of Malaysia" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malàisia"@oc .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Maleisië"@li .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "mejgu'e"@jbo .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@nds .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@bug .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "मलयेशिया"@sa .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "মাল্যাশিয়া"@bn .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Ma-lay-xi-a"@vi .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malezi"@ht .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "ಮಲೇಶಿಯ"@kn .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Persekutuan Tanah Melayu" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malasia"@eu .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaisia - Malaysia"@gl .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@tl .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@hsb .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaezia"@ro .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Federation of Malaya" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@su .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@ilo .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Persekutuan Tanah Malaysia" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysi"@kw .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Pulau Sebang"@ms .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "मलयेशिया"@ks .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@sw .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "மலேஷியா"@ta .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malajzia"@sq .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@pam .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malèsie"@frp .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@nn .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malasya"@qu .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaizia"@io .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysiyän"@vo .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Maleizje"@fy .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malezija"@hbs .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysien"@de .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "ประเทศมาเลเซีย"@th .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "말레이지아"@ko .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaisia"@an .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysia"@gd .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#alternateName> "Malaysien"@lb .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher> "Museum" .

@@ -1,0 +1,174 @@
+<https://example.org/objects/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#additionalType> "Photo" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#about> "Palace" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#identifier> "5678" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#name> "Object 2" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#description> "Suspendisse ut condimentum leo, et vulputate lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vel volutpat nunc. Sed vel libero ac lorem dapibus euismod. Aenean a ante et turpis bibendum consectetur at pulvinar quam." .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#material> "Paper" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#technique> "Albumen process" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#creator> "Adriaan Boer" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#owner> "Research Organisation"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#yearCreatedStart> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#yearCreatedEnd> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "耶加達"@yue .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "اندونيسيا"@ar .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ইন্দোনেশিয়া"@bn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Dżakarta"@pl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@tr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "雅加达"@zh .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republik Indonesia" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@fr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@is .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Џакарта"@mk .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yakarta"@nah .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@an .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Giacarta"@it .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ଜାକର୍ତା"@or .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yndoneezje"@fy .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "จาการ์ตา"@th .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@no .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@ru .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indoneska"@hsb .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@ilo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesiya"@ku .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@uk .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Initonīhia"@mi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Cakarta"@tr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاكارتا"@ug .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@id .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@hr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yakarta"@es .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@vi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonésia"@su .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@pam .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Džakarta"@sl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Xacarta"@vec .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "जकार्ता"@mr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ဂျကာတာမြို့"@my .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ఇండోనేసియా"@te .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@jv .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Индонези"@cv .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@jv .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesien"@nds .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@rue .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جکارتا"@ps .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@nn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Giacarta"@pms .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Cakarta"@az .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Ջակարտա"@hy .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yajgyadaz"@za .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاكارتا"@ar .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Netherland India" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@su .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@eu .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indunesia"@scn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ಜಕಾರ್ತ"@kn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@nn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Džakarta"@lt .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Ngâ-kâ-tha̍t Sú-tû Thi̍t-khî"@hak .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Sakata"@tpi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republiek de Verenigde Staten van Indonesië" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@ba .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@la .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "இந்தோனேஷியா"@ta .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ចាការតា"@km .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "bidgu'e"@jbo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@kk .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonezia"@io .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Big Durian"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاکارتا"@fa .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "자카르타"@ko .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ਜਕਾਰਤਾ"@pa .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@de .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@af .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Sunda Kelapa" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@da .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Džakarta"@hbs .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indes orientales néerlandaises"@fr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "জাকার্তা"@bn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "जकार्ता"@sa .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesi"@kw .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Dki Jakarta" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jogkarta" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@ms .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакартæ"@os .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesië"@li .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@ast .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Τζακάρτα"@el .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesië" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@pt .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Dżakarta"@szl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Lindäna-Seänuäns"@vo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@ca .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@sw .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indunisya"@qu .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@oc .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Iacárta"@ga .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ジャカルタ"@ja .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republik Indonesia Serikat" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "United States of Indonesia" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yakarta"@tl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Џакарта"@sr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@tl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Giacarta"@lmo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "जकार्ता"@hi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@io .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@mhr .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonezia"@sq .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@sv .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Дьакарта"@sah .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "דזשאקארטא"@yi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jacarta" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nam Dương"@vi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Iacarta"@gl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Daerah Khusus Ibukota Jakarta"@min .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جکارتہ"@ur .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاکارتا"@ckb .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "इन्दोनेशिया"@sa .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@sk .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "જાકાર્તા"@gu .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Ĝakarto"@eo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Netherlands Indies" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@hu .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Yakarta"@an .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Dutch East Indies" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Endonezi"@ht .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "జకార్తా"@te .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@bg .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ጃካርታ"@am .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "สาธารณรัฐอินโดนีเซีย"@th .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ג'קרטה"@he .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جکارتہ"@pnb .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ھىندۇنېزىيە"@ug .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonézia"@tet .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Xhakarta"@sq .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ประเทศอินโดนีเซีย"@th .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Cakarta"@ku .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Endonezya"@ku .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Džakarta"@bs .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@cs .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاكارتا"@arz .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Républik Indonésia"@su .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ജക്കാർത്ത"@ml .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ஜகார்த்தா"@ta .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@fi .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djogkarta" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Džakarta"@lv .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jayakarta" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Джакарта"@be .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Indonesia"@na .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ཊ་ཁར་ཏ།"@bo .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "ჯაკარტა"@ka .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Жакарта"@mn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "جاکارتا"@mzn .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "اندونېزيا"@ps .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher> "Onderzoeksinstelling"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher> "Research Organisation"@en .

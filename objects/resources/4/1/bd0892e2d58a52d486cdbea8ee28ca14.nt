@@ -1,0 +1,53 @@
+<https://example.org/objects/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#additionalType> "Painting" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#about> "Celebrations" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#identifier> "1234" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#name> "Object 1" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#material> "Canvas" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#material> "Oilpaint" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#creator> "Vincent van Gogh" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#owner> "Museum" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#yearCreatedStart> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#yearCreatedEnd> "1890"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@tet .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinamia"@la .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinami"@scn .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@tl .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Netherlands Guiana" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@ilo .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "سورينام"@ps .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch Guyana" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republiek van Suriname" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "蘇利南"@zh .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@io .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@pam .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@fi .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "สุรินัม"@th .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@oc .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Nederlandisch Guyana" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@fr .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "சுரிநாம்"@ta .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinän"@vo .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "סורינאם"@yi .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "सुरिनाम"@sa .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republiek Suriname"@nl .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@kw .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@hbs .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republic of Surinam" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Xu-ri-nam"@vi .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Dutch Guiana" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@ast .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republic of Suriname"@en .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@ms .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@se .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "सुरिनाम"@hi .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@sw .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@li .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Suriname"@frp .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@nn .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@nds .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Surinam"@an .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "ประเทศซูรินาม"@th .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher> "Museum" .

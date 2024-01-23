@@ -1,13 +1,13 @@
 name: Update Knowledge Graph and Search Graph
 
 # Every day at 11:00
-on:
-  schedule:
-    - cron: "0 11 * * *"
-
 # on:
-#   push:
-#     branches: ["main"]
+#   schedule:
+#     - cron: "0 11 * * *"
+
+on:
+  push:
+    branches: ["main"]
 
 jobs:
 

@@ -85,7 +85,7 @@
     a crm:E69_Death ;
     crm:P4_has_time-span [
       a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1701"^^xsd:gYeardate ;
+      crm:P82a_begin_of_the_begin "1701"^^xsd:gYear ;
       crm:P82b_end_of_the_end "1701"^^xsd:gYear ;
     ] ;
     crm:P7_took_place_at [
@@ -167,19 +167,6 @@
         rdfs:label "Batavia" ;
         crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
         crm:P190_has_symbolic_content "Batavia" ;
-      ] ;
-    ] ;
-  ] ;
-  crm:P100i_died_in [
-    a crm:E69_Death ;
-    crm:P7_took_place_at [
-      a crm:E53_Place ;
-      crm:P2_has_type <http://vocab.getty.edu/aat/300008389> ; # City
-      crm:P1_is_identified_by [
-        a crm:E33_E41_Linguistic_Appellation ;
-        rdfs:label "Jakarta" ;
-        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
-        crm:P190_has_symbolic_content "Jakarta" ;
       ] ;
     ] ;
   ] ;

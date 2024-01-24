@@ -6,7 +6,7 @@
 
 <https://museum.example.org/>
   a schema:Organization ;
-  schema:name "Museum" ;
+  schema:name "Museum"@en, "Museum"@nl ;
   schema:url <http://www.example.org> ;
   schema:address [
     a schema:PostalAddress ;
@@ -40,9 +40,7 @@
     schema:addressCountry "Nederland"@nl, "Netherlands"@en
   ] .
 
-
 <https://research.example.org/>
   a schema:Organization ;
-  schema:name "Research Organisation"@en,
-            "Onderzoeksinstelling"@nl .
-  # No further data - intentionally missing for testing
+  schema:name "Research Organisation"@en, "Onderzoeksinstelling"@nl .
+  # No more data - intentionally missing for testing

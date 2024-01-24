@@ -15,24 +15,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
   ?this a cc:HeritageObject ;
-    cc:additionalType ?typeName ;
-    cc:about ?subjectName ;
+    cc:additionalType ?typeName ; # For BC; remove as soon as locale-aware names are in use
+    cc:additionalType_en ?typeNameEn ;
+    cc:additionalType_nl ?typeNameNl ;
+    cc:about ?subjectName ; # For BC; remove as soon as locale-aware names are in use
+    cc:about_en ?subjectNameEn ;
+    cc:about_nl ?subjectNameNl ;
     cc:identifier ?identifier ;
     cc:name ?name ;
     cc:description ?description ;
     cc:inscription ?inscription ;
-    cc:material ?materialName ;
-    cc:technique ?techniqueName ;
+    cc:material ?materialName ; # For BC; remove as soon as locale-aware names are in use
+    cc:material_en ?materialNameEn ;
+    cc:material_nl ?materialNameNl ;
+    cc:technique ?techniqueName ; # For BC; remove as soon as locale-aware names are in use
+    cc:technique_en ?techniqueNameEn ;
+    cc:technique_nl ?techniqueNameNl ;
     cc:creator ?creatorName ;
-    cc:owner ?ownerName ;
+    cc:owner ?ownerName ; # For BC; remove as soon as locale-aware names are in use
+    cc:owner_en ?ownerNameEn ;
+    cc:owner_nl ?ownerNameNl ;
     cc:yearCreatedStart ?beginOfTheBeginYear ;
     cc:yearCreatedEnd ?endOfTheEndYear ;
     cc:locationCreated ?locationCreatedName ; # Only for indexing
-    cc:countryCreated ?oldCountryCreatedName ; # For BC; remove if the locale-aware names are in use
+    cc:countryCreated ?oldCountryCreatedName ; # For BC; remove as soon as locale-aware names are in use
     cc:countryCreated_en ?countryCreatedNameEn ;
     cc:countryCreated_nl ?countryCreatedNameNl ;
     cc:alternateName ?alternateLocationCreatedName, ?alternateCountryCreatedName ; # Only for indexing
-    cc:publisher ?publisherName .
+    cc:publisher ?publisherName ; # For BC; remove as soon as locale-aware names are in use
+    cc:publisher_en ?publisherNameEn ;
+    cc:publisher_nl ?publisherNameNl .
 }
 WHERE {
   BIND(?_iri AS ?this)
@@ -45,6 +57,9 @@ WHERE {
     ?this crm:P2_has_type [
       rdfs:label ?typeName
     ] ;
+
+    BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
+    BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
   }
 
   ####################
@@ -90,6 +105,9 @@ WHERE {
     ?this crm:P62_depicts [
       rdfs:label ?subjectName
     ] ;
+
+    BIND(IF(LANG(?subjectName) = "en", ?subjectName, ?null) AS ?subjectNameEn)
+    BIND(IF(LANG(?subjectName) = "nl", ?subjectName, ?null) AS ?subjectNameNl)
   }
 
   ####################
@@ -100,6 +118,9 @@ WHERE {
     ?this crm:P45_consists_of [
       rdfs:label ?materialName
     ] ;
+
+    BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
+    BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
   }
 
   ####################
@@ -121,6 +142,9 @@ WHERE {
     ?this crm:P108i_was_produced_by/crm:P32_used_general_technique [
       rdfs:label ?techniqueName
     ] ;
+
+    BIND(IF(LANG(?techniqueName) = "en", ?techniqueName, ?null) AS ?techniqueNameEn)
+    BIND(IF(LANG(?techniqueName) = "nl", ?techniqueName, ?null) AS ?techniqueNameNl)
   }
 
   ####################
@@ -128,9 +152,12 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P52_has_current_owner ?owner .
-    ?owner schema:name ?ownerName .
-    FILTER(LANG(?ownerName) = "" || LANGMATCHES(LANG(?ownerName), "en"))
+    ?this crm:P52_has_current_owner [
+      schema:name ?ownerName
+    ] ;
+
+    BIND(IF(LANG(?ownerName) = "en", ?ownerName, ?null) AS ?ownerNameEn)
+    BIND(IF(LANG(?ownerName) = "nl", ?ownerName, ?null) AS ?ownerNameNl)
   }
 
   ####################
@@ -149,8 +176,9 @@ WHERE {
 
   OPTIONAL {
     ?this crm:P108i_was_produced_by/crm:P4_has_time-span/crm:P82a_begin_of_the_begin ?beginOfTheBegin .
-    FILTER(DATATYPE(?beginOfTheBegin) = xsd:date || DATATYPE(?beginOfTheBegin) = xsd:gYear || DATATYPE(?beginOfTheBegin) = xsd:gYearMonth)
+
     # Values can have an xsd date type but not be a valid date (!) - ignore these
+    FILTER(DATATYPE(?beginOfTheBegin) = xsd:date || DATATYPE(?beginOfTheBegin) = xsd:gYear || DATATYPE(?beginOfTheBegin) = xsd:gYearMonth)
     FILTER(COALESCE(xsd:date(STR(?beginOfTheBegin)), '!') != '!')
   }
 
@@ -158,8 +186,9 @@ WHERE {
 
   OPTIONAL {
     ?this crm:P108i_was_produced_by/crm:P4_has_time-span/crm:P82b_end_of_the_end ?endOfTheEnd .
-    FILTER(DATATYPE(?endOfTheEnd) = xsd:date || DATATYPE(?endOfTheEnd) = xsd:gYear || DATATYPE(?endOfTheEnd) = xsd:gYearMonth)
+
     # Values can have an xsd date type but not be a valid date (!) - ignore these
+    FILTER(DATATYPE(?endOfTheEnd) = xsd:date || DATATYPE(?endOfTheEnd) = xsd:gYear || DATATYPE(?endOfTheEnd) = xsd:gYearMonth)
     FILTER(COALESCE(xsd:date(STR(?endOfTheEnd)), '!') != '!')
   }
 
@@ -206,7 +235,7 @@ WHERE {
       }
     }
 
-    # For BC; remove if the locale-aware names are in use
+    # For BC; remove as soon as locale-aware names are in use
     BIND(IF(?featureCode = <https://www.geonames.org/ontology#A.PCLI>, ?unofficialLocationCreatedName, ?unofficialCountryCreatedName) AS ?oldCountryCreatedName)
 
     # Location could be a country already
@@ -230,5 +259,8 @@ WHERE {
     ?dataset schema:publisher [
       schema:name ?publisherName ;
     ] ;
+
+    BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
+    BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)
   }
 }

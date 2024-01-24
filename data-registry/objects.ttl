@@ -12,18 +12,18 @@
   a crm:E22_Human-Made_Object ;
   crm:P2_has_type [
     a crm:E55_Type ;
-    rdfs:label "Painting"
+    rdfs:label "Schilderij"@nl # No English label
   ] ;
   crm:P45_consists_of [
     a crm:E57_Material ;
-    rdfs:label "Oilpaint"
+    rdfs:label "Olieverf"@nl # No English label
   ] , [
     a crm:E57_Material ;
-    rdfs:label "Canvas"
+    rdfs:label "Canvas"@nl # No English label
   ] ;
   crm:P62_depicts [
     a crm:E1_CRM_Entity ;
-    rdfs:label "Celebrations"
+    rdfs:label "Vieringen"@nl # No English label
   ] ;
   crm:P52_has_current_owner <https://museum.example.org/> ;
   la:member_of <https://example.org/datasets/1> ;
@@ -98,15 +98,15 @@
   a crm:E22_Human-Made_Object ;
   crm:P2_has_type [
     a crm:E55_Type ;
-    rdfs:label "Photo"
+    rdfs:label "Photo"@en # No Dutch label
   ] ;
   crm:P45_consists_of [
     a crm:E57_Material ;
-    rdfs:label "Paper"
+    rdfs:label "Paper"@en # No Dutch label
   ] ;
   crm:P62_depicts [
     a crm:E1_CRM_Entity ;
-    rdfs:label "Palace"
+    rdfs:label "Palace"@en # No Dutch label
   ] ;
   crm:P52_has_current_owner <https://research.example.org/> ;
   la:member_of <https://example.org/datasets/13> ;
@@ -145,7 +145,7 @@
     a crm:E12_Production ;
     crm:P32_used_general_technique [
       a crm:E55_Type ;
-      rdfs:label "Albumen process"
+      rdfs:label "Albumen process"@en # No Dutch label
     ] ;
     crm:P14_carried_out_by [
       a crm:E21_Person ;
@@ -172,21 +172,21 @@
   a crm:E22_Human-Made_Object ;
   crm:P2_has_type [
     a crm:E55_Type ;
-    rdfs:label "Drawing"
+    rdfs:label "Drawing"@en, "Tekening"@nl
   ] ;
   crm:P45_consists_of [
     a crm:E57_Material ;
-    rdfs:label "Paper"
+    rdfs:label "Paper"@en, "Papier"@nl
   ] , [
     a crm:E57_Material ;
-    rdfs:label "Ink"
+    rdfs:label "Ink"@en, "Inkt"@nl
   ] ;
   crm:P62_depicts [
     a crm:E1_CRM_Entity ;
-    rdfs:label "Castle"
+    rdfs:label "Castle"@en, "Kasteel"@nl
   ] , [
     a crm:E1_CRM_Entity ;
-    rdfs:label "Cottage"
+    rdfs:label "Cottage"@en, "Cottage"@nl
   ] ;
   crm:P52_has_current_owner <https://library.example.org/> ;
   la:member_of <https://example.org/datasets/10> ;
@@ -232,18 +232,18 @@
   a crm:E22_Human-Made_Object ;
   crm:P2_has_type [
     a crm:E55_Type ;
-    rdfs:label "Canvas Painting"
+    rdfs:label "Canvas Painting"@en, "Schildering op doek"@nl
   ] ;
   crm:P45_consists_of [
     a crm:E57_Material ;
-    rdfs:label "Oilpaint"
+    rdfs:label "Oilpaint"@en, "Olieverf"@nl
   ] , [
     a crm:E57_Material ;
-    rdfs:label "Canvas"
+    rdfs:label "Canvas"@en, "Canvas"@nl
   ] ;
   crm:P62_depicts [
     a crm:E1_CRM_Entity ;
-    rdfs:label "Celebrations"
+    rdfs:label "Celebrations"@en, "Vieringen"@nl
   ] ;
   crm:P52_has_current_owner <https://museum.example.org/> ;
   la:member_of <https://example.org/datasets/1> ;
@@ -282,7 +282,7 @@
     a crm:E12_Production ;
     crm:P32_used_general_technique [
       a crm:E55_Type ;
-      rdfs:label "Albumen process"
+      rdfs:label "Albumen process"@en, "Albuminedruk"@nl
     ] ;
     crm:P14_carried_out_by [
       a crm:E21_Person ;

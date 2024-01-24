@@ -7,4 +7,5 @@
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#deathDate> "1701-07"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#deathYear> "1701"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#isPartOf> "Dataset 1"@en .
-<https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "Museum" .
+<https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "Museum"@en .
+<https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .

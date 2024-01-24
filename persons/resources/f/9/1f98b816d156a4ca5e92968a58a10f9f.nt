@@ -2,4 +2,5 @@
 <https://example.org/persons/5> <https://colonialcollections.nl/schema#name> "Beatrice Vlieger" .
 <https://example.org/persons/5> <https://colonialcollections.nl/schema#birthPlace> "Rotterdam" .
 <https://example.org/persons/5> <https://colonialcollections.nl/schema#isPartOf> "Dataset 4" .
-<https://example.org/persons/5> <https://colonialcollections.nl/schema#publisher> "Museum" .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#publisher> "Museum"@en .
+<https://example.org/persons/5> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .

@@ -1,2 +1,5 @@
 <https://example.org/objects/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
-<https://example.org/objects/4> <https://colonialcollections.nl/schema#publisher> "Museum" .
+<https://example.org/objects/4> <https://colonialcollections.nl/schema#publisher> "Museum"@en .
+<https://example.org/objects/4> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .
+<https://example.org/objects/4> <https://colonialcollections.nl/schema#publisher_en> "Museum"@en .
+<https://example.org/objects/4> <https://colonialcollections.nl/schema#publisher_nl> "Museum"@nl .

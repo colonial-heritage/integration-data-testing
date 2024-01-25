@@ -58,8 +58,8 @@ WHERE {
       rdfs:label ?typeName
     ] ;
 
-    BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
-    BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
+    # BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
+    # BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
   }
 
   ####################
@@ -106,8 +106,8 @@ WHERE {
       rdfs:label ?subjectName
     ] ;
 
-    BIND(IF(LANG(?subjectName) = "en", ?subjectName, ?null) AS ?subjectNameEn)
-    BIND(IF(LANG(?subjectName) = "nl", ?subjectName, ?null) AS ?subjectNameNl)
+    # BIND(IF(LANG(?subjectName) = "en", ?subjectName, ?null) AS ?subjectNameEn)
+    # BIND(IF(LANG(?subjectName) = "nl", ?subjectName, ?null) AS ?subjectNameNl)
   }
 
   ####################
@@ -119,8 +119,8 @@ WHERE {
       rdfs:label ?materialName
     ] ;
 
-    BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
-    BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
+    # BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
+    # BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
   }
 
   ####################
@@ -143,8 +143,8 @@ WHERE {
       rdfs:label ?techniqueName
     ] ;
 
-    BIND(IF(LANG(?techniqueName) = "en", ?techniqueName, ?null) AS ?techniqueNameEn)
-    BIND(IF(LANG(?techniqueName) = "nl", ?techniqueName, ?null) AS ?techniqueNameNl)
+    # BIND(IF(LANG(?techniqueName) = "en", ?techniqueName, ?null) AS ?techniqueNameEn)
+    # BIND(IF(LANG(?techniqueName) = "nl", ?techniqueName, ?null) AS ?techniqueNameNl)
   }
 
   ####################
@@ -156,8 +156,8 @@ WHERE {
       schema:name ?ownerName
     ] ;
 
-    BIND(IF(LANG(?ownerName) = "en", ?ownerName, ?null) AS ?ownerNameEn)
-    BIND(IF(LANG(?ownerName) = "nl", ?ownerName, ?null) AS ?ownerNameNl)
+    # BIND(IF(LANG(?ownerName) = "en", ?ownerName, ?null) AS ?ownerNameEn)
+    # BIND(IF(LANG(?ownerName) = "nl", ?ownerName, ?null) AS ?ownerNameNl)
   }
 
   ####################
@@ -260,7 +260,7 @@ WHERE {
       schema:name ?publisherName ;
     ] ;
 
-    BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
-    BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)
+    # BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
+    # BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)
   }
 }

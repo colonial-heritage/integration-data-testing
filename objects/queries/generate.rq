@@ -48,15 +48,15 @@ CONSTRUCT {
 }
 WHERE {
   BIND(?_iri AS ?this)
+  # BIND(<https://example.org/objects/5> AS ?this)
 
   ####################
   # Type
   ####################
 
   OPTIONAL {
-    ?this crm:P2_has_type [
-      rdfs:label ?typeName
-    ] ;
+    ?this crm:P2_has_type/rdfs:label ?typeName
+    FILTER(LANG(?typeName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
     # BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
@@ -102,9 +102,8 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P62_depicts [
-      rdfs:label ?subjectName
-    ] ;
+    ?this crm:P62_depicts/rdfs:label ?subjectName
+    FILTER(LANG(?subjectName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?subjectName) = "en", ?subjectName, ?null) AS ?subjectNameEn)
     # BIND(IF(LANG(?subjectName) = "nl", ?subjectName, ?null) AS ?subjectNameNl)
@@ -115,9 +114,8 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P45_consists_of [
-      rdfs:label ?materialName
-    ] ;
+    ?this crm:P45_consists_of/rdfs:label ?materialName
+    FILTER(LANG(?materialName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
     # BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
@@ -139,9 +137,8 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P108i_was_produced_by/crm:P32_used_general_technique [
-      rdfs:label ?techniqueName
-    ] ;
+    ?this crm:P108i_was_produced_by/crm:P32_used_general_technique/rdfs:label ?techniqueName
+    FILTER(LANG(?techniqueName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?techniqueName) = "en", ?techniqueName, ?null) AS ?techniqueNameEn)
     # BIND(IF(LANG(?techniqueName) = "nl", ?techniqueName, ?null) AS ?techniqueNameNl)
@@ -152,9 +149,8 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P52_has_current_owner [
-      schema:name ?ownerName
-    ] ;
+    ?this crm:P52_has_current_owner/schema:name ?ownerName
+    FILTER(LANG(?ownerName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?ownerName) = "en", ?ownerName, ?null) AS ?ownerNameEn)
     # BIND(IF(LANG(?ownerName) = "nl", ?ownerName, ?null) AS ?ownerNameNl)
@@ -165,9 +161,7 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?this crm:P108i_was_produced_by/crm:P14_carried_out_by [
-      rdfs:label ?creatorName
-    ] ;
+    ?this crm:P108i_was_produced_by/crm:P14_carried_out_by/rdfs:label ?creatorName
   }
 
   ####################
@@ -256,9 +250,8 @@ WHERE {
   ####################
 
   OPTIONAL {
-    ?dataset schema:publisher [
-      schema:name ?publisherName ;
-    ] ;
+    ?dataset schema:publisher/schema:name ?publisherName
+    FILTER(LANG(?publisherName) = "en") # For BC; remove as soon as locale-aware names are in use
 
     # BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
     # BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)

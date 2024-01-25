@@ -1,28 +1,16 @@
 <https://example.org/objects/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#name> "Object 1" .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher> "Museum"@en .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#additionalType> "Schilderij"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#additionalType_nl> "Schilderij"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#about> "Vieringen"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#about_nl> "Vieringen"@nl .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#identifier> "1234" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#name> "Object 1" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#material> "Olieverf"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#material> "Canvas"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#material_nl> "Olieverf"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#material_nl> "Canvas"@nl .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#creator> "Vincent van Gogh" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#owner> "Museum"@en .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#owner> "Museum"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#owner_en> "Museum"@en .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#owner_nl> "Museum"@nl .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#yearCreatedStart> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#yearCreatedEnd> "1890"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#locationCreated> "Suriname"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#locationCreated> "Suriname"@nl .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#countryCreated> "Suriname" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#countryCreated_en> "Suriname"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#countryCreated_nl> "Suriname"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republic of Suriname"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republiek Suriname"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher_en> "Museum"@en .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher_nl> "Museum"@nl .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republic of Suriname"@en .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher> "Museum"@en .

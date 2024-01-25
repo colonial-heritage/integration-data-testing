@@ -1,10 +1,11 @@
 <https://example.org/objects/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#additionalType> "Photo" .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#about> "Palace" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#additionalType> "Photo"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#about> "Palace"@en .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#identifier> "5678" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#name> "Object 2" .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#description> "Suspendisse ut condimentum leo, et vulputate lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vel volutpat nunc. Sed vel libero ac lorem dapibus euismod. Aenean a ante et turpis bibendum consectetur at pulvinar quam." .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#material> "Paper" .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#technique> "Albumen process" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#material> "Paper"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#technique> "Albumen process"@en .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#creator> "Adriaan Boer" .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#owner> "Research Organisation"@en .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#yearCreatedStart> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -12,17 +13,15 @@
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#locationCreated> "Jakarta"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated> "Indonesia" .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_en> "Indonesia"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Indonesië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Republiek Indonesië"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Big Durian"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Indonesië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#name> "Object 2" .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Big Durian"@en .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher> "Research Organisation"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher> "Onderzoeksinstelling"@nl .

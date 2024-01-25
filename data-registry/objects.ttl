@@ -211,8 +211,8 @@
     a crm:E12_Production ;
     crm:P4_has_time-span [
       a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1725"^^xsd:gYear ;
-      crm:P82b_end_of_the_end "1736"^^xsd:gYear ;
+      crm:P82a_begin_of_the_begin "-1736"^^xsd:gYear ;
+      crm:P82b_end_of_the_end "-1725"^^xsd:gYear ;
     ] ;
     crm:P7_took_place_at <https://sws.geonames.org/1642673/> ; # Java, Indonesia
   ] ;

@@ -1,13 +1,8 @@
 name: Update datasets
 
-# Every day at 05:45
-# on:
-#   schedule:
-#     - cron: "45 5 * * *"
-
 on:
   workflow_run:
-    workflows: [Update Data Registry]
+    workflows: [Update objects]
     types:
       - completed
 

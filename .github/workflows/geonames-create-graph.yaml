@@ -1,9 +1,10 @@
 name: Update GeoNames
 
-# Every day at 05:15
+# Every day at 04:15 and 05:20
 on:
   schedule:
-    - cron: "15 5 * * *"
+    - cron: "15 4 * * *"
+    - cron: "20 5 * * *"
 
 jobs:
   run:

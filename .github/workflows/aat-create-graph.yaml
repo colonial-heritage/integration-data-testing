@@ -1,9 +1,9 @@
 name: Update AAT
 
-# Every day at 05:05
+# Every day at 04:35
 on:
   schedule:
-    - cron: "5 5 * * *"
+    - cron: "35 4 * * *"
 
 jobs:
   run:

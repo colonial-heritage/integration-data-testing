@@ -1,15 +1,9 @@
 name: Update AAT
 
 # Every day at 05:05
-# on:
-#   schedule:
-#     - cron: "5 5 * * *"
-
-# on:
-#   workflow_run:
-#     workflows: [Update Data Registry]
-#     types:
-#       - completed
+on:
+  schedule:
+    - cron: "5 5 * * *"
 
 jobs:
   run:

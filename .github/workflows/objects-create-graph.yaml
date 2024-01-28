@@ -1,15 +1,10 @@
 name: Update objects
 
-# Every day at 05:35
-# on:
-#   schedule:
-#     - cron: "35 5 * * *"
-
-# on:
-#   workflow_run:
-#     workflows: [Update persons]
-#     types:
-#       - completed
+on:
+  workflow_run:
+    workflows: [Update persons]
+    types:
+      - completed
 
 jobs:
   run:

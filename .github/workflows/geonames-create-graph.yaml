@@ -1,15 +1,9 @@
 name: Update GeoNames
 
 # Every day at 05:15
-# on:
-#   schedule:
-#     - cron: "15 5 * * *"
-
-# on:
-#   workflow_run:
-#     workflows: [Update AAT]
-#     types:
-#       - completed
+on:
+  schedule:
+    - cron: "15 5 * * *"
 
 jobs:
   run:

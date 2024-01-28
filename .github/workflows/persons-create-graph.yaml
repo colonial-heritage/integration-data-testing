@@ -1,15 +1,9 @@
 name: Update persons
 
 # Every day at 05:25
-# on:
-#   schedule:
-#     - cron: "25 5 * * *"
-
-# on:
-#   workflow_run:
-#     workflows: [Update GeoNames]
-#     types:
-#       - completed
+on:
+  schedule:
+    - cron: "25 5 * * *"
 
 jobs:
   run:

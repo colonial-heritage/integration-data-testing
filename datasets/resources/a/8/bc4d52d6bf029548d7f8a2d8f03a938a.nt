@@ -1,0 +1,4 @@
+<https://example.org/datasets/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
+<https://example.org/datasets/10> <https://colonialcollections.nl/schema#name> "Dataset 10" .
+<https://example.org/datasets/10> <https://colonialcollections.nl/schema#license> "Custom License" .
+<https://example.org/datasets/10> <https://colonialcollections.nl/schema#publisher> "Library" .

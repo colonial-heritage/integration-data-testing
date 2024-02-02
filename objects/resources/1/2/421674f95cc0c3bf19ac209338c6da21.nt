@@ -1,19 +1,20 @@
 <https://example.org/objects/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher> "Museum"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#additionalType> "Canvas Painting"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#about> "Celebrations"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#identifier> "7890" .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Oilpaint"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#technique> "Albumen process"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#creator> "Geeske van Châtellerault" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#owner> "Museum"@en .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#owner> "The Museum"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#yearCreatedStart> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#yearCreatedEnd> "1902"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#locationCreated> "Pulau Sebang" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated> "Malaysia" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_en> "Malaysia"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_nl> "Maleisië"@nl .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher_en> "The Museum"@en .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher_nl> "Het Museum"@nl .

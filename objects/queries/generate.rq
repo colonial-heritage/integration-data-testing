@@ -38,11 +38,10 @@ CONSTRUCT {
     cc:yearCreatedStart ?beginOfTheBeginYear ;
     cc:yearCreatedEnd ?endOfTheEndYear ;
     cc:locationCreated ?locationCreatedName ; # Only for indexing
-    cc:countryCreated ?oldCountryCreatedName ; # For BC; remove as soon as locale-aware names are in use
     cc:countryCreated_en ?countryCreatedNameEn ;
     cc:countryCreated_nl ?countryCreatedNameNl ;
     cc:alternateName ?alternateLocationCreatedName, ?alternateCountryCreatedName ; # Only for indexing
-    cc:publisher ?publisherName ; # For BC; remove as soon as locale-aware names are in use
+    cc:publisher ?publisherNameEn ; # For BC; remove as soon as locale-aware names are in use
     cc:publisher_en ?publisherNameEn ;
     cc:publisher_nl ?publisherNameNl .
 }
@@ -229,9 +228,6 @@ WHERE {
       }
     }
 
-    # For BC; remove as soon as locale-aware names are in use
-    BIND(IF(?featureCode = <https://www.geonames.org/ontology#A.PCLI>, ?unofficialLocationCreatedName, ?unofficialCountryCreatedName) AS ?oldCountryCreatedName)
-
     # Location could be a country already
     # https://www.geonames.org/export/codes.html
     BIND(IF(?featureCode = <https://www.geonames.org/ontology#A.PCLI>, ?locationCreatedName, ?countryCreatedName) AS ?countryCreated)
@@ -251,9 +247,8 @@ WHERE {
 
   OPTIONAL {
     ?dataset schema:publisher/schema:name ?publisherName
-    FILTER(LANG(?publisherName) = "en") # For BC; remove as soon as locale-aware names are in use
 
-    # BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
-    # BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)
+    BIND(IF(LANG(?publisherName) = "en", ?publisherName, ?null) AS ?publisherNameEn)
+    BIND(IF(LANG(?publisherName) = "nl", ?publisherName, ?null) AS ?publisherNameNl)
   }
 }

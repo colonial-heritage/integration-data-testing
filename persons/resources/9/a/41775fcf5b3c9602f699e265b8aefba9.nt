@@ -1,0 +1,11 @@
+<https://example.org/persons/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#name> "Michiel Adriaensz. de Ruyter" .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#birthPlace> "Vlissingen" .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#birthDate> "1607-03-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#birthYear> "1607"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#deathPlace> "Syracuse" .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#deathDate> "1676-04-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#deathYear> "1676"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#isPartOf> "Dataset 1"@en .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .
+<https://example.org/persons/1> <https://colonialcollections.nl/schema#publisher> "Museum"@en .

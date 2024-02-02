@@ -1,0 +1,8 @@
+<https://example.org/persons/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#name> "Kees Jansen" .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#birthPlace> "Groningen" .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#birthDate> "1645-12-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#birthYear> "1645"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#deathPlace> "Jakarta" .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#isPartOf> "Dataset 3"@en .
+<https://example.org/persons/3> <https://colonialcollections.nl/schema#publisher> "Archive"@en .

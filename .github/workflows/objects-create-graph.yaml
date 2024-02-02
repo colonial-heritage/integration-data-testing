@@ -1,14 +1,8 @@
 name: Update objects
 
-# on:
-#   workflow_run:
-#     workflows: [Update persons]
-#     types:
-#       - completed
-
 on:
   workflow_run:
-    workflows: [Update Data Registry]
+    workflows: [Update persons]
     types:
       - completed
 

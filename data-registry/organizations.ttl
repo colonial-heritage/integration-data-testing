@@ -6,13 +6,13 @@
 
 <https://museum.example.org/>
   a schema:Organization ;
-  schema:name "Museum"@en, "Museum"@nl ;
+  schema:name "Het Museum"@nl, "The Museum"@en ;
   schema:url <http://www.example.org> ;
   schema:address [
     a schema:PostalAddress ;
     schema:streetAddress "Museum Street 1" ;
     schema:postalCode "1234 AB" ;
-    schema:addressLocality "Museum Place" ;
+    schema:addressLocality "Museumplaats"@nl, "Museum Place"@en ;
     schema:addressCountry "Nederland"@nl, "Netherlands"@en
   ] .
 
@@ -24,8 +24,8 @@
     a schema:PostalAddress ;
     schema:streetAddress "Archive Street 1" ;
     schema:postalCode "5678 CD" ;
-    schema:addressLocality "Archive Place" ;
-    schema:addressCountry "Nederland"@nl, "Netherlands"@en
+    schema:addressLocality "Archive Place"@en ;
+    schema:addressCountry "Nederland"@en
   ] .
 
 <https://library.example.org/>
@@ -37,7 +37,7 @@
     schema:streetAddress "Library Street 1" ;
     schema:postalCode "9012 EF" ;
     schema:addressLocality "Library Place" ;
-    schema:addressCountry "Nederland"@nl, "Netherlands"@en
+    schema:addressCountry "Nederland"
   ] .
 
 <https://research.example.org/>

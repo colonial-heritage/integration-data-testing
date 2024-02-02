@@ -98,7 +98,10 @@
     a crm:E21_Person ;
     rdfs:label "Jonathan Hansen" ;
   ] ;
-  crm:P22_transferred_title_to <https://museum.example.org/> ; # Buyer
+  crm:P22_transferred_title_to [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/5> .
 
 <https://example.org/objects/1/provenance/event/5>
@@ -129,7 +132,10 @@
   rdfs:label "Theft of object from owner" ;
   crm:P2_has_type <http://vocab.getty.edu/aat/300055292> ; # "Theft"
   crm:P30_transferred_custody_of <https://example.org/objects/1> ;
-  crm:P28_custody_surrendered_by <https://museum.example.org/> ; # Owner
+  crm:P28_custody_surrendered_by [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
   # No 'crm:P29_custody_received_by': unknown
   crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/3> .
 
@@ -157,7 +163,10 @@
   rdfs:label "Return of object to owner" ;
   crm:P2_has_type <http://vocab.getty.edu/aat/300445014> ; # "Returning"
   crm:P30_transferred_custody_of <https://example.org/objects/1> ;
-  crm:P29_custody_received_by <https://museum.example.org/> ; # Owner
+  crm:P29_custody_received_by [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/4> .
 
 <https://example.org/objects/1/provenance/event/4>
@@ -196,7 +205,10 @@
     a crm:E21_Person ;
     rdfs:label "Mr. S. Zwarts" ;
   ] ;
-  crm:P22_transferred_title_to <https://museum.example.org/> ;
+  crm:P22_transferred_title_to [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/1> .
 
 <https://example.org/objects/2/provenance/event/1>
@@ -226,8 +238,14 @@
   rdfs:label "Loan of object" ;
   crm:P2_has_type <http://vocab.getty.edu/aat/300417645> ; # "Loan"
   crm:P30_transferred_custody_of <https://example.org/objects/2> ;
-  crm:P28_custody_surrendered_by <https://museum.example.org/> ; # Lender
-  crm:P29_custody_received_by <https://archive.example.org/> ; # Recipient
+  crm:P28_custody_surrendered_by [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
+  crm:P29_custody_received_by [
+    a crm:E39_Actor ;
+    rdfs:label "Organization B" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/2> .
 
 <https://example.org/objects/2/provenance/event/2>
@@ -250,8 +268,14 @@
   rdfs:label "Return of object" ;
   crm:P2_has_type <http://vocab.getty.edu/aat/300438467> ; # "Return of loan"
   crm:P30_transferred_custody_of <https://example.org/objects/2> ;
-  crm:P28_custody_surrendered_by <https://archive.example.org/> ;
-  crm:P29_custody_received_by <https://museum.example.org/> ;
+  crm:P28_custody_surrendered_by [
+    a crm:E39_Actor ;
+    rdfs:label "Organization B" ;
+  ] ;
+  crm:P29_custody_received_by [
+    a crm:E74_Group ;
+    rdfs:label "Organization A" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/3> .
 
 <https://example.org/objects/2/provenance/event/3>

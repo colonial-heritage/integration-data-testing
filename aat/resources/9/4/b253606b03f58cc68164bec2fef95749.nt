@@ -1,0 +1,12 @@
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "cities"@en .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.getty.edu/aat/> .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "城市"@zh-hant .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "chéng shì"@zh-latn-pinyin-x-hanyu .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "cheng shi"@zh-latn-pinyin-x-notone .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "ch'eng shih"@zh-latn-wadegile .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "steden"@nl .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stadt (Siedlung)"@de .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "città"@it .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "cidades"@pt .
+<http://vocab.getty.edu/aat/300008389> <http://www.w3.org/2004/02/skos/core#prefLabel> "ciudades"@es .

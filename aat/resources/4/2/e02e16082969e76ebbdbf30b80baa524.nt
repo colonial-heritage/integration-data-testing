@@ -1,0 +1,9 @@
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "theft (social issue)"@en .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.getty.edu/aat/> .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "偷竊"@zh-hant .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "tōu qiè"@zh-latn-pinyin-x-hanyu .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "tou qie"@zh-latn-pinyin-x-notone .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "t'ou ch'ieh"@zh-latn-wadegile .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "diefstal"@nl .
+<http://vocab.getty.edu/aat/300055292> <http://www.w3.org/2004/02/skos/core#prefLabel> "robo"@es .

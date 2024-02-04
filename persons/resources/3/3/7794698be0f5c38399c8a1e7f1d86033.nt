@@ -1,5 +1,5 @@
 <https://example.org/persons/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
 <https://example.org/persons/10> <https://colonialcollections.nl/schema#name> "Ida Oost" .
+<https://example.org/persons/10> <https://colonialcollections.nl/schema#publisher> "Het Museum"@nl .
+<https://example.org/persons/10> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
 <https://example.org/persons/10> <https://colonialcollections.nl/schema#isPartOf> "Dataset 1"@en .
-<https://example.org/persons/10> <https://colonialcollections.nl/schema#publisher> "Museum"@nl .
-<https://example.org/persons/10> <https://colonialcollections.nl/schema#publisher> "Museum"@en .

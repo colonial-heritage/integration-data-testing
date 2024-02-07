@@ -1,7 +1,7 @@
 <http://vocab.getty.edu/aat/300055863> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "provenance (history of ownership)"@en .
-<http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.getty.edu/aat/> .
 <http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "provenance"@fr .
+<http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.getty.edu/aat/> .
+<http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "provenance (history of ownership)"@en .
 <http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "起源"@zh-hant .
 <http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "qi yuán"@zh-latn-pinyin-x-hanyu .
 <http://vocab.getty.edu/aat/300055863> <http://www.w3.org/2004/02/skos/core#prefLabel> "qi yuan"@zh-latn-pinyin-x-notone .

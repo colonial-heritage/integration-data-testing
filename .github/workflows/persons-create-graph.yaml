@@ -1,9 +1,13 @@
 name: Update persons
 
 # Every day at 05:45
+# on:
+#   schedule:
+#     - cron: "45 5 * * *"
+
 on:
-  schedule:
-    - cron: "45 5 * * *"
+  push:
+    branches: ["main"]
 
 jobs:
   run:

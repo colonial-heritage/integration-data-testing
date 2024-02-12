@@ -40,7 +40,6 @@
     schema:addressCountry "Nederland"
   ] .
 
-
 <https://research.example.org/>
   a schema:Organization ;
   schema:name "Research Organisation"@en, "Onderzoeksinstelling"@nl .

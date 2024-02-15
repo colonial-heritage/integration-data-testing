@@ -105,6 +105,6 @@ WHERE {
   OPTIONAL {
     ?dataset schema:publisher [
       schema:name ?publisherName ;
-    ] ;
+    ] .
   }
 }

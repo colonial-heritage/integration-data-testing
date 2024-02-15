@@ -41,7 +41,6 @@ CONSTRUCT {
     cc:countryCreated_en ?countryCreatedNameEn ;
     cc:countryCreated_nl ?countryCreatedNameNl ;
     cc:alternateName ?alternateLocationCreatedName, ?alternateCountryCreatedName ; # Only for indexing
-    cc:publisher ?publisherNameEn ; # For BC; remove as soon as locale-aware names are in use
     cc:publisher_en ?publisherNameEn ;
     cc:publisher_nl ?publisherNameNl .
 }
@@ -70,7 +69,7 @@ WHERE {
       a crm:E42_Identifier ;
       crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
       crm:P190_has_symbolic_content ?identifier
-    ] ;
+    ] .
   }
 
   ####################
@@ -82,7 +81,7 @@ WHERE {
       a crm:E33_E41_Linguistic_Appellation ;
       crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
       crm:P190_has_symbolic_content ?name
-    ] ;
+    ] .
   }
 
   ####################
@@ -93,7 +92,7 @@ WHERE {
     ?this crm:P67i_is_referred_to_by [
       crm:P2_has_type <http://vocab.getty.edu/aat/300435416> ; # Description
       crm:P190_has_symbolic_content ?description
-    ] ;
+    ] .
   }
 
   ####################
@@ -128,7 +127,7 @@ WHERE {
     ?this crm:P128_carries [
       crm:P2_has_type <http://vocab.getty.edu/aat/300028702> ; # Inscription
       crm:P190_has_symbolic_content ?inscription ;
-    ] ;
+    ] .
   }
 
   ####################

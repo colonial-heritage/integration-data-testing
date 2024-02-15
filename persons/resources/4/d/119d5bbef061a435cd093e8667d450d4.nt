@@ -1,4 +1,4 @@
 <https://example.org/persons/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
-<https://example.org/persons/8> <https://colonialcollections.nl/schema#isPartOf> "Dataset 5"@en .
 <https://example.org/persons/8> <https://colonialcollections.nl/schema#name> "Welmoed Zuid" .
+<https://example.org/persons/8> <https://colonialcollections.nl/schema#isPartOf> "Dataset 5"@en .
 <https://example.org/persons/8> <https://colonialcollections.nl/schema#publisher> "Archive"@en .

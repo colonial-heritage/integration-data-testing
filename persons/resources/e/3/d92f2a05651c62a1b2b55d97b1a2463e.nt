@@ -1,4 +1,5 @@
 <https://example.org/persons/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
+<https://example.org/persons/9> <https://colonialcollections.nl/schema#name> "Karel van 't Westen" .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#birthPlace> "Rotterdam" .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#birthDate> "1645-02"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#birthYear> "1645"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -6,6 +7,5 @@
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#deathDate> "1701-07"^^<http://www.w3.org/2001/XMLSchema#gYearMonth> .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#deathYear> "1701"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#isPartOf> "Dataset 1"@en .
-<https://example.org/persons/9> <https://colonialcollections.nl/schema#name> "Karel van 't Westen" .
-<https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
 <https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "Het Museum"@nl .
+<https://example.org/persons/9> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .

@@ -12,17 +12,16 @@
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#yearCreatedEnd> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#locationCreated> "Jakarta"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_en> "Indonesia"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Indonesië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Republiek Indonesië"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#countryCreated_nl> "Indonesië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Jakarta"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Big Durian"@en .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Republic of Indonesia"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Big Durian"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Djakarta"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlandsch-Indië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Oost-Indien"@nl .
-<https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher> "Research Organisation"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@nl .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Batavia"@en .
+<https://example.org/objects/2> <https://colonialcollections.nl/schema#alternateName> "Nederlands-Indië"@nl .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher_en> "Research Organisation"@en .
 <https://example.org/objects/2> <https://colonialcollections.nl/schema#publisher_nl> "Onderzoeksinstelling"@nl .

@@ -15,6 +15,5 @@
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#locationCreated> "Pulau Sebang" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_en> "Malaysia"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#countryCreated_nl> "Maleisië"@nl .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher_en> "The Museum"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#publisher_nl> "Het Museum"@nl .

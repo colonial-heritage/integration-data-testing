@@ -1,7 +1,7 @@
 <https://example.org/datasets/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
-<https://example.org/datasets/1> <https://colonialcollections.nl/schema#license> "Attribution 4.0 International (CC BY 4.0)" .
-<https://example.org/datasets/1> <https://colonialcollections.nl/schema#keywords> "Suspendisse" .
-<https://example.org/datasets/1> <https://colonialcollections.nl/schema#keywords> "Hendrerit" .
 <https://example.org/datasets/1> <https://colonialcollections.nl/schema#name> "Dataset 1"@en .
 <https://example.org/datasets/1> <https://colonialcollections.nl/schema#description> "Maecenas quis sem ante. Vestibulum mattis lorem in mauris pulvinar tincidunt. Sed nisi ligula, mattis id vehicula at, faucibus vel quam."@en .
+<https://example.org/datasets/1> <https://colonialcollections.nl/schema#license> "Attribution 4.0 International (CC BY 4.0)" .
 <https://example.org/datasets/1> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
+<https://example.org/datasets/1> <https://colonialcollections.nl/schema#keywords> "Suspendisse" .
+<https://example.org/datasets/1> <https://colonialcollections.nl/schema#keywords> "Hendrerit" .

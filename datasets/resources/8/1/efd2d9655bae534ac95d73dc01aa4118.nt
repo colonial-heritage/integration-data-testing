@@ -1,4 +1,4 @@
 <https://example.org/datasets/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
-<https://example.org/datasets/7> <https://colonialcollections.nl/schema#license> "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication" .
 <https://example.org/datasets/7> <https://colonialcollections.nl/schema#name> "Dataset 7"@en .
+<https://example.org/datasets/7> <https://colonialcollections.nl/schema#license> "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication" .
 <https://example.org/datasets/7> <https://colonialcollections.nl/schema#publisher> "Archive"@en .

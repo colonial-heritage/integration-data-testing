@@ -1,6 +1,6 @@
 <https://example.org/datasets/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
-<https://example.org/datasets/13> <https://colonialcollections.nl/schema#license> "Copyright Undetermined" .
-<https://example.org/datasets/13> <https://colonialcollections.nl/schema#keywords> "Fringilla" .
 <https://example.org/datasets/13> <https://colonialcollections.nl/schema#name> "Dataset 13" .
 <https://example.org/datasets/13> <https://colonialcollections.nl/schema#description> "Cras erat elit, finibus eget ipsum vel, gravida dapibus leo. Etiam sem erat, suscipit id eros sit amet, scelerisque ornare sem. Aenean commodo elementum neque ac accumsan." .
+<https://example.org/datasets/13> <https://colonialcollections.nl/schema#license> "Copyright Undetermined" .
 <https://example.org/datasets/13> <https://colonialcollections.nl/schema#publisher> "Research Organisation"@en .
+<https://example.org/datasets/13> <https://colonialcollections.nl/schema#keywords> "Fringilla" .

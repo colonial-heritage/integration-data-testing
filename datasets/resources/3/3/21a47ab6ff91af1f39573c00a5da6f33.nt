@@ -3,5 +3,5 @@
 <https://example.org/datasets/12> <https://colonialcollections.nl/schema#description> "Donec placerat orci vel erat commodo suscipit. Morbi elementum nunc ut dolor venenatis, vel ultricies nisi euismod. Sed aliquet ultricies sapien, vehicula malesuada nunc tristique ac." .
 <https://example.org/datasets/12> <https://colonialcollections.nl/schema#license> "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication" .
 <https://example.org/datasets/12> <https://colonialcollections.nl/schema#publisher> "Library" .
-<https://example.org/datasets/12> <https://colonialcollections.nl/schema#keywords> "Vestibulum" .
 <https://example.org/datasets/12> <https://colonialcollections.nl/schema#keywords> "Hendrerit" .
+<https://example.org/datasets/12> <https://colonialcollections.nl/schema#keywords> "Vestibulum" .

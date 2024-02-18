@@ -10,7 +10,7 @@
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#locationCreated> "Suriname"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#countryCreated_en> "Suriname"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#countryCreated_nl> "Suriname"@nl .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republiek Suriname"@nl .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republic of Suriname"@en .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#alternateName> "Republiek Suriname"@nl .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher_en> "The Museum"@en .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#publisher_nl> "Het Museum"@nl .

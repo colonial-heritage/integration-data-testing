@@ -5,8 +5,8 @@
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Oilpaint"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas"@en .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Oilpaint"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#technique> "Albumen process"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#creator> "Geeske van Châtellerault" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#owner> "The Museum"@en .

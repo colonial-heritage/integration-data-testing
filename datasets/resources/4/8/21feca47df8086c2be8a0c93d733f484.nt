@@ -1,5 +1,5 @@
 <https://example.org/datasets/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
 <https://example.org/datasets/9> <https://colonialcollections.nl/schema#name> "Dataset 9"@en .
+<https://example.org/datasets/9> <https://colonialcollections.nl/schema#publisher> "Library" .
 <https://example.org/datasets/9> <https://colonialcollections.nl/schema#description> "Maecenas quis sem ante. Vestibulum mattis lorem in mauris pulvinar tincidunt. Sed nisi ligula, mattis id vehicula at, faucibus vel quam."@en .
 <https://example.org/datasets/9> <https://colonialcollections.nl/schema#license> "Attribution 4.0 International (CC BY 4.0)" .
-<https://example.org/datasets/9> <https://colonialcollections.nl/schema#publisher> "Library" .

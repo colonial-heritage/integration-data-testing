@@ -1,4 +1,4 @@
 <https://example.org/datasets/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
 <https://example.org/datasets/3> <https://colonialcollections.nl/schema#name> "Dataset 3"@en .
-<https://example.org/datasets/3> <https://colonialcollections.nl/schema#license> "Open Data Commons Open Database License (ODbL) v1.0" .
 <https://example.org/datasets/3> <https://colonialcollections.nl/schema#publisher> "Archive"@en .
+<https://example.org/datasets/3> <https://colonialcollections.nl/schema#license> "Open Data Commons Open Database License (ODbL) v1.0" .

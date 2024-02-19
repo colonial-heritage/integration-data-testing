@@ -1,6 +1,0 @@
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/2004/02/skos/core#prefLabel> "Engels"@nl .
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.getty.edu/aat/> .
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/2004/02/skos/core#prefLabel> "English (language)"@en .
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/2004/02/skos/core#prefLabel> "anglais"@fr .
-<http://vocab.getty.edu/aat/300388277> <http://www.w3.org/2004/02/skos/core#prefLabel> "Englisch"@de .

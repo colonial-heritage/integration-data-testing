@@ -1,6 +1,0 @@
-<https://example.org/persons/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Person> .
-<https://example.org/persons/6> <https://colonialcollections.nl/schema#name> "Geeske van Châtellerault" .
-<https://example.org/persons/6> <https://colonialcollections.nl/schema#birthPlace> "New York" .
-<https://example.org/persons/6> <https://colonialcollections.nl/schema#isPartOf> "Dataset 4" .
-<https://example.org/persons/6> <https://colonialcollections.nl/schema#publisher> "Het Museum"@nl .
-<https://example.org/persons/6> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .

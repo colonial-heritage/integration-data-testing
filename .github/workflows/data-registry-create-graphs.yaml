@@ -43,6 +43,7 @@ jobs:
             --triplydb-service "kg"
 
   update-aat:
+    needs: [update-data-registry]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout data repository

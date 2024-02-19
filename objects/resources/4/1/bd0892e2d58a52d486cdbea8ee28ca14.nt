@@ -1,6 +1,6 @@
 <https://example.org/objects/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
-<https://example.org/objects/1> <https://colonialcollections.nl/schema#identifier> "1234" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#name> "Object 1" .
+<https://example.org/objects/1> <https://colonialcollections.nl/schema#identifier> "1234" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#creator> "Vincent van Gogh" .
 <https://example.org/objects/1> <https://colonialcollections.nl/schema#owner> "The Museum"@en .

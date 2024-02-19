@@ -1,8 +1,8 @@
 <https://example.org/objects/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#HeritageObject> .
+<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#additionalType> "Canvas Painting"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#about> "Celebrations"@en .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#identifier> "7890" .
-<https://example.org/objects/5> <https://colonialcollections.nl/schema#name> "Object 5" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#description> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices velit vitae vulputate tincidunt. Donec dictum tortor nec tempus mollis." .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#inscription> "Maecenas commodo est neque" .
 <https://example.org/objects/5> <https://colonialcollections.nl/schema#material> "Canvas"@en .

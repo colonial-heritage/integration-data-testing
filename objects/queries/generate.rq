@@ -46,7 +46,6 @@ CONSTRUCT {
 }
 WHERE {
   BIND(?_iri AS ?this)
-  # BIND(<https://example.org/objects/5> AS ?this)
 
   ####################
   # Type

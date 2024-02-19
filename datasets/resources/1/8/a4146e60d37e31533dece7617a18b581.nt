@@ -1,7 +1,7 @@
 <https://example.org/datasets/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
 <https://example.org/datasets/4> <https://colonialcollections.nl/schema#name> "Dataset 4" .
+<https://example.org/datasets/4> <https://colonialcollections.nl/schema#license> "Open Data Commons Attribution License (ODC-By) v1.0" .
 <https://example.org/datasets/4> <https://colonialcollections.nl/schema#publisher> "The Museum"@en .
 <https://example.org/datasets/4> <https://colonialcollections.nl/schema#description> "Donec placerat orci vel erat commodo suscipit. Morbi elementum nunc ut dolor venenatis, vel ultricies nisi euismod. Sed aliquet ultricies sapien, vehicula malesuada nunc tristique ac." .
-<https://example.org/datasets/4> <https://colonialcollections.nl/schema#license> "Open Data Commons Attribution License (ODC-By) v1.0" .
 <https://example.org/datasets/4> <https://colonialcollections.nl/schema#keywords> "Hendrerit" .
 <https://example.org/datasets/4> <https://colonialcollections.nl/schema#keywords> "Suspendisse" .

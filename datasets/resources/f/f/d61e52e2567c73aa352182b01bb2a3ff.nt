@@ -1,6 +1,6 @@
 <https://example.org/datasets/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://colonialcollections.nl/schema#Dataset> .
 <https://example.org/datasets/5> <https://colonialcollections.nl/schema#name> "Dataset 5"@en .
+<https://example.org/datasets/5> <https://colonialcollections.nl/schema#license> "In Copyright" .
 <https://example.org/datasets/5> <https://colonialcollections.nl/schema#publisher> "Archive"@en .
 <https://example.org/datasets/5> <https://colonialcollections.nl/schema#description> "Maecenas quis sem ante. Vestibulum mattis lorem in mauris pulvinar tincidunt. Sed nisi ligula, mattis id vehicula at, faucibus vel quam."@en .
-<https://example.org/datasets/5> <https://colonialcollections.nl/schema#license> "In Copyright" .
 <https://example.org/datasets/5> <https://colonialcollections.nl/schema#keywords> "Keyword"@en .

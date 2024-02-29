@@ -27,12 +27,6 @@
     a crm:E21_Person ;
     rdfs:label "Jan de Vries" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/1> .
-
-<https://example.org/objects/1/provenance/event/1>
-  a crm:E7_Activity ;
-  rdfs:label "Purchase of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -48,6 +42,12 @@
     crm:P190_has_symbolic_content "Bought for 1500 US dollars" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
   ] ;
+  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/1> .
+
+<https://example.org/objects/1/provenance/event/1>
+  a crm:E7_Activity ;
+  rdfs:label "Purchase of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/1/provenance/event/1/activity/1> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/1/provenance/event/2> .
 
@@ -64,12 +64,6 @@
     a crm:E21_Person ;
     rdfs:label "Jonathan Hansen" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/2> .
-
-<https://example.org/objects/1/provenance/event/2>
-  a crm:E7_Activity ;
-  rdfs:label "Purchase of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -85,6 +79,12 @@
     crm:P190_has_symbolic_content "Bought at an auction in The Hague" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
   ] ;
+  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/2> .
+
+<https://example.org/objects/1/provenance/event/2>
+  a crm:E7_Activity ;
+  rdfs:label "Purchase of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/1/provenance/event/2/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/1/provenance/event/1> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/1/provenance/event/5> .
@@ -102,12 +102,6 @@
     a crm:E74_Group ;
     rdfs:label "Organization A" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/5> .
-
-<https://example.org/objects/1/provenance/event/5>
-  a crm:E7_Activity ;
-  rdfs:label "Purchase of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -123,6 +117,12 @@
     crm:P190_has_symbolic_content "Bought at an auction in Amsterdam" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
   ] ;
+  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/5> .
+
+<https://example.org/objects/1/provenance/event/5>
+  a crm:E7_Activity ;
+  rdfs:label "Purchase of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/1/provenance/event/5/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/1/provenance/event/2> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/1/provenance/event/3> .
@@ -137,12 +137,6 @@
     rdfs:label "Organization A" ;
   ] ;
   # No 'crm:P29_custody_received_by': unknown
-  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/3> .
-
-<https://example.org/objects/1/provenance/event/3>
-  a crm:E7_Activity ;
-  rdfs:label "Theft of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -154,6 +148,12 @@
     rdfs:label "Amsterdam" ;
   ] ;
   # No 'crm:P67i_is_referred_to_by' for testing
+  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/3> .
+
+<https://example.org/objects/1/provenance/event/3>
+  a crm:E7_Activity ;
+  rdfs:label "Theft of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/1/provenance/event/3/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/1/provenance/event/5> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/1/provenance/event/4> .
@@ -167,12 +167,6 @@
     a crm:E74_Group ;
     rdfs:label "Organization A" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/4> .
-
-<https://example.org/objects/1/provenance/event/4>
-  a crm:E7_Activity ;
-  rdfs:label "Return of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -188,6 +182,12 @@
     crm:P190_has_symbolic_content "Found in a basement" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
   ] ;
+  crm:P9i_forms_part_of <https://example.org/objects/1/provenance/event/4> .
+
+<https://example.org/objects/1/provenance/event/4>
+  a crm:E7_Activity ;
+  rdfs:label "Return of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/1/provenance/event/4/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/1/provenance/event/3> .
 
@@ -209,12 +209,6 @@
     a crm:E74_Group ;
     rdfs:label "Organization A" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/1> .
-
-<https://example.org/objects/2/provenance/event/1>
-  a crm:E7_Activity ;
-  rdfs:label "Gift of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -230,6 +224,12 @@
     crm:P190_has_symbolic_content "Given by the mayor" ;
     crm:P2_has_type <http://vocab.getty.edu/aat/300444174> ; # "Provenance statement"
   ] ;
+  crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/1> .
+
+<https://example.org/objects/2/provenance/event/1>
+  a crm:E7_Activity ;
+  rdfs:label "Gift of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/2/provenance/event/1/activity/1> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/2/provenance/event/2> .
 
@@ -246,12 +246,6 @@
     a crm:E39_Actor ;
     rdfs:label "Organization B" ;
   ] ;
-  crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/2> .
-
-<https://example.org/objects/2/provenance/event/2>
-  a crm:E7_Activity ;
-  rdfs:label "Loan of object" ;
-  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P4_has_time-span [
     a crm:E52_Time-Span ;
     rdfs:label "Provenance Activity Timespan" ;
@@ -259,6 +253,12 @@
     crm:P82b_end_of_the_end "1901"^^xsd:gYear ;
   ] ;
   # No 'crm:P7_took_place_at' for testing
+  crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/2> .
+
+<https://example.org/objects/2/provenance/event/2>
+  a crm:E7_Activity ;
+  rdfs:label "Loan of object" ;
+  crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
   crm:P9_consists_of <https://example.org/objects/2/provenance/event/2/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/2/provenance/event/1> ;
   crm:P183_ends_before_the_start_of <https://example.org/objects/2/provenance/event/3> .
@@ -276,16 +276,16 @@
     a crm:E74_Group ;
     rdfs:label "Organization A" ;
   ] ;
+  # No 'P4_has_time-span' for testing
+  crm:P7_took_place_at [
+    a crm:E53_Place ;
+    rdfs:label "Groningen" ;
+  ] ;
   crm:P9i_forms_part_of <https://example.org/objects/2/provenance/event/3> .
 
 <https://example.org/objects/2/provenance/event/3>
   a crm:E7_Activity ;
   rdfs:label "Return of object" ;
   crm:P2_has_type <http://vocab.getty.edu/aat/300055863> ; # "Provenance event"
-  # No 'P4_has_time-span' for testing
-  crm:P7_took_place_at [
-    a crm:E53_Place ;
-    rdfs:label "Groningen" ;
-  ] ;
   crm:P9_consists_of <https://example.org/objects/2/provenance/event/3/activity/1> ;
   crm:P183i_starts_after_the_end_of <https://example.org/objects/2/provenance/event/2> .

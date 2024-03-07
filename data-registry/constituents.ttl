@@ -1,5 +1,5 @@
 ###############################
-# Persons, for testing
+# Constituents (persons, organizations)
 ###############################
 
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -7,7 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://example.org/persons/1>
+<https://example.org/constituents/1>
   a crm:E21_Person ;
   rdfs:label "Michiel Adriaensz. de Ruyter" ;
   crm:P1_is_identified_by [
@@ -54,7 +54,7 @@
   ] ;
   la:member_of <https://example.org/datasets/1> .
 
-<https://example.org/persons/2>
+<https://example.org/constituents/2>
   a crm:E21_Person ;
   rdfs:label "Jan de Vries" ;
   crm:P1_is_identified_by [
@@ -101,7 +101,7 @@
   ] ;
   la:member_of <https://example.org/datasets/1> .
 
-<https://example.org/persons/3>
+<https://example.org/constituents/3>
   a crm:E21_Person ;
   rdfs:label "Kees Jansen" ;
   crm:P1_is_identified_by [
@@ -143,7 +143,7 @@
   ] ;
   la:member_of <https://example.org/datasets/3> .
 
-<https://example.org/persons/4>
+<https://example.org/constituents/4>
   a crm:E21_Person ;
   rdfs:label "Gert Nooitgedacht" ;
   crm:P1_is_identified_by [
@@ -172,7 +172,7 @@
   ] ;
   la:member_of <https://example.org/datasets/3> .
 
-<https://example.org/persons/5>
+<https://example.org/constituents/5>
   a crm:E21_Person ;
   rdfs:label "Beatrice Vlieger" ;
   crm:P1_is_identified_by [
@@ -196,7 +196,7 @@
   ] ;
   la:member_of <https://example.org/datasets/4> .
 
-<https://example.org/persons/6>
+<https://example.org/constituents/6>
   a crm:E21_Person ;
   rdfs:label "Geeske van Châtellerault" ;
   crm:P1_is_identified_by [
@@ -220,7 +220,7 @@
   ] ;
   la:member_of <https://example.org/datasets/4> .
 
-<https://example.org/persons/7>
+<https://example.org/constituents/7>
   a crm:E21_Person ;
   rdfs:label "Theodora Noord" ;
   crm:P1_is_identified_by [
@@ -231,7 +231,7 @@
   ] ;
   la:member_of <https://example.org/datasets/5> .
 
-<https://example.org/persons/8>
+<https://example.org/constituents/8>
   a crm:E21_Person ;
   rdfs:label "Welmoed Zuid" ;
   crm:P1_is_identified_by [
@@ -242,7 +242,7 @@
   ] ;
   la:member_of <https://example.org/datasets/5> .
 
-<https://example.org/persons/9>
+<https://example.org/constituents/9>
   a crm:E21_Person ;
   rdfs:label "Karel van 't Westen" ;
   crm:P1_is_identified_by [
@@ -289,7 +289,7 @@
   ] ;
   la:member_of <https://example.org/datasets/1> .
 
-<https://example.org/persons/10>
+<https://example.org/constituents/10>
   a crm:E21_Person ;
   rdfs:label "Ida Oost" ;
   crm:P1_is_identified_by [
@@ -308,7 +308,7 @@
   ] ;
   la:member_of <https://example.org/datasets/1> .
 
-<https://example.org/persons/11>
+<https://example.org/constituents/11>
   a crm:E21_Person ;
   rdfs:label "Julienne Noordwest" ;
   crm:P1_is_identified_by [
@@ -326,3 +326,36 @@
     ] ;
   ] ;
   la:member_of <https://example.org/datasets/3> .
+
+<https://example.org/constituents/12>
+  a crm:E74_Group ;
+  rdfs:label "Art Dealer" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Art Dealer" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Art Dealer" ;
+  ] ;
+  la:member_of <https://example.org/datasets/1> .
+
+<https://example.org/constituents/13>
+  a crm:E74_Group ;
+  rdfs:label "Art Store" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Art Store" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Art Store" ;
+  ] ;
+  la:member_of <https://example.org/datasets/1> .
+
+<https://example.org/constituents/14>
+  a crm:E39_Actor ;
+  rdfs:label "Trade Company" ;
+  crm:P1_is_identified_by [
+    a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label "Trade Company" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # Name
+    crm:P190_has_symbolic_content "Trade Company" ;
+  ] ;
+  la:member_of <https://example.org/datasets/1> .

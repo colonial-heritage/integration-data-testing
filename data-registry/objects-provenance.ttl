@@ -1,5 +1,5 @@
 ###############################
-# Provenance information of objects, for testing
+# Provenance information of objects
 ###############################
 
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .

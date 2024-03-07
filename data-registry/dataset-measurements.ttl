@@ -1,5 +1,5 @@
 ###############################
-# Measurements of datasets, for testing
+# Measurements of datasets
 ###############################
 
 @prefix cc-metrics: <https://data.colonialcollections.nl/metrics#> .

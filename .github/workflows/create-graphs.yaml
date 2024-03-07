@@ -122,7 +122,7 @@ jobs:
             --graph-name "https://data.colonialcollections.nl/geonames" \
             --temp-dir "$RUNNER_TEMP"
 
-  update-persons:
+  update-constituents:
     needs: [update-geonames]
     runs-on: ubuntu-latest
     steps:
@@ -130,7 +130,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: ./data
-          sparse-checkout: persons
+          sparse-checkout: constituents
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -149,23 +149,23 @@ jobs:
         run: |
           cd ./data
           ../code/apps/graph-create/dist/cli.js create \
-            --resource-dir ./persons/resources \
+            --resource-dir ./constituents/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
             --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --iterate-query-file ./persons/queries/iterate.rq \
+            --iterate-query-file ./constituents/queries/iterate.rq \
             --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --generate-query-file ./persons/queries/generate.rq \
+            --generate-query-file ./constituents/queries/generate.rq \
             --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
             --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
             --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
             --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
             --triplydb-service "search" \
             --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
-            --graph-name "https://data.colonialcollections.nl/persons" \
+            --graph-name "https://data.colonialcollections.nl/constituents" \
             --temp-dir "$RUNNER_TEMP"
 
   update-objects:
-    needs: [update-persons]
+    needs: [update-constituents]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout data repository

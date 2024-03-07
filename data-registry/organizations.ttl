@@ -1,5 +1,5 @@
 ###############################
-# Organizations, e.g. data providers, for testing
+# Organizations, e.g. data providers
 ###############################
 
 @prefix schema: <https://schema.org/> .
@@ -39,7 +39,6 @@
     schema:addressLocality "Library Place" ;
     schema:addressCountry "Nederland"
   ] .
-
 
 <https://research.example.org/>
   a schema:Organization ;

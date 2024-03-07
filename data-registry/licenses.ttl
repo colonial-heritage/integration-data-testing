@@ -1,5 +1,5 @@
 ###############################
-# Licenses of datasets, for testing
+# Licenses of datasets
 ###############################
 
 @prefix schema: <https://schema.org/> .

@@ -1,5 +1,5 @@
 ###############################
-# Object information, for testing
+# Object information
 ###############################
 
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .

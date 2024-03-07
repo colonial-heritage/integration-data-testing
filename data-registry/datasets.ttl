@@ -1,5 +1,5 @@
 ###############################
-# Datasets, for testing
+# Datasets
 ###############################
 
 @prefix schema: <https://schema.org/> .

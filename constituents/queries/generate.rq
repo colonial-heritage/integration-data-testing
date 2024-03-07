@@ -1,5 +1,5 @@
 ###############################
-# Query for generating a search graph from person descriptions in dataset 'persons.ttl' from the Data Registry
+# Query for generating a search graph from constituent descriptions in dataset 'constituents.ttl' from the Data Registry
 ###############################
 
 PREFIX cc: <https://colonialcollections.nl/schema#> # Internal ontology
@@ -9,7 +9,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
-  ?this a cc:Person ;
+  ?this a cc:Actor ;
     cc:name ?name ;
     cc:birthPlace ?birthPlaceName ;
     cc:birthDate ?birthDate ;
@@ -17,7 +17,6 @@ CONSTRUCT {
     cc:deathPlace ?deathPlaceName ;
     cc:deathDate ?deathDate ;
     cc:deathYear ?deathYear ;
-    cc:isPartOf ?datasetName ; # For BC; remove when locale-aware names are in use
     cc:publisher_en ?publisherNameEn ;
     cc:publisher_nl ?publisherNameNl .
 }

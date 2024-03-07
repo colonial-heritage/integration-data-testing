@@ -9,7 +9,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
-  ?this a cc:Actor ;
+  ?this a cc:Person ; # For BC; should become cc:Actor as soon the SPARQL queries in the frontend have been updated
     cc:name ?name ;
     cc:birthPlace ?birthPlaceName ;
     cc:birthDate ?birthDate ;

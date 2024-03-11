@@ -15,7 +15,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
   ?this a cc:HeritageObject ;
-    cc:additionalType ?typeName ; # For BC; remove as soon as locale-aware names are in use
     cc:additionalType_en ?typeNameEn ;
     cc:additionalType_nl ?typeNameNl ;
     cc:about ?subjectName ; # For BC; remove as soon as locale-aware names are in use
@@ -25,7 +24,6 @@ CONSTRUCT {
     cc:name ?name ;
     cc:description ?description ;
     cc:inscription ?inscription ;
-    cc:material ?materialName ; # For BC; remove as soon as locale-aware names are in use
     cc:material_en ?materialNameEn ;
     cc:material_nl ?materialNameNl ;
     cc:technique ?techniqueName ; # For BC; remove as soon as locale-aware names are in use
@@ -53,10 +51,9 @@ WHERE {
 
   OPTIONAL {
     ?this crm:P2_has_type/rdfs:label ?typeName
-    FILTER(LANG(?typeName) = "en") # For BC; remove as soon as locale-aware names are in use
 
-    # BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
-    # BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
+    BIND(IF(LANG(?typeName) = "en", ?typeName, ?null) AS ?typeNameEn)
+    BIND(IF(LANG(?typeName) = "nl", ?typeName, ?null) AS ?typeNameNl)
   }
 
   ####################
@@ -112,10 +109,9 @@ WHERE {
 
   OPTIONAL {
     ?this crm:P45_consists_of/rdfs:label ?materialName
-    FILTER(LANG(?materialName) = "en") # For BC; remove as soon as locale-aware names are in use
 
-    # BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
-    # BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
+    BIND(IF(LANG(?materialName) = "en", ?materialName, ?null) AS ?materialNameEn)
+    BIND(IF(LANG(?materialName) = "nl", ?materialName, ?null) AS ?materialNameNl)
   }
 
   ####################

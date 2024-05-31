@@ -1,0 +1,163 @@
+@prefix schema: <https://schema.org/> .
+
+<https://guides.example.org/top-level>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Research Guides"@en, "Onderzoeksgidsen"@nl ;
+  schema:description "Introduction"@en, "Introductie"@nl ;
+  schema:text "What are the Research Guides?"@en, "Wat zijn de onderzoeksgidsen?"@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:hasPart <https://guides.example.org/level-1a>, <https://guides.example.org/level-1b>, <https://guides.example.org/level-1c> .
+
+<https://guides.example.org/level-1a>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Doing research"@en, "Onderzoeken"@nl ;
+  schema:abstract "What roadmap should you follow for doing (provenance) research and how do you get more information?"@en,
+    "Welk stappenplan moet je volgen voor het doen van (herkomst)onderzoek en hoe kom je aan meer informatie?"@nl ;
+  schema:text "Provenance research goes through several stages. Depending on the purpose of your research, you go through one or more steps. In practice, the research steps intertwine and can often be carried out simultaneously."@en,
+    "Herkomstonderzoek verloopt in verschillende fasen. Afhankelijk van het doel van je onderzoek doorloop je één of meerdere stappen. In de praktijk lopen de onderzoeksstappen in elkaar over en kunnen ze vaak gelijktijdig worden uitgevoerd."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:isPartOf <https://guides.example.org/top-level> ;
+  schema:hasPart <https://guides.example.org/level-2a> .
+
+<https://guides.example.org/level-2a>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Military and navy"@en, "Leger en Marine"@nl ;
+  schema:abstract "Army and Navy personnel who operated in colonized territories collected objects in various ways during the colonial era."@en,
+    "Leger- en marinepersoneel dat actief was in gekoloniseerde gebieden, verzamelde op verschillende manieren objecten tijdens het koloniale tijdperk."@nl ;
+  schema:text "Dutch authority in the [Dutch East Indies](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) and on the [Caribbean Islands](https://www.geonames.org/8505032/netherlands-antilles.html) relied heavily on the use of the military..."@en,
+    "Het Nederlandse gezag in [Nederlands-Indië](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) en op de [Caribische eilanden](https://www.geonames.org/8505032/netherlands-antilles.html) steunde in belangrijke mate op de inzet van het leger."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:contentLocation [
+    a schema:Place ;
+    schema:name "Netherlands Antilles"@en, "Antillen"@nl ;
+    schema:sameAs <https://www.geonames.org/8505032/netherlands-antilles.html>
+  ] ;
+  schema:keywords [
+    a schema:DefinedTerm ;
+    schema:name "Midshipman"@en, "Adelborst"@nl ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q11141137>
+  ] ;
+  schema:isPartOf <https://guides.example.org/level-1a> ;
+  schema:hasPart <https://guides.example.org/level-3a> ;
+  schema:citation [
+    a schema:CreativeWork ;
+    schema:name "Regeeringsalmanak voor Nederlandsch-Indië"@en, "Regeeringsalmanak voor Nederlandsch-Indië"@nl ;
+    schema:description "Via Delpher, the editions can be found by selecting the title"@en,
+      "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
+    schema:url <https://www.delpher.nl/>
+  ] .
+
+<https://guides.example.org/level-3a>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Royal Cabinet of Curiosities"@en, "Koninklijk Kabinet van Zeldzaamheden"@nl ;
+  schema:abstract "The Royal Cabinet of Curiosities was established in 1816 by King William I. The collection consisted of a variety of objects, including many from colonized regions."@en,
+    "Het Koninklijk Kabinet van Zeldzaamheden werd in 1816 opgericht door Koning Willem I. De collectie bestond uit allerlei voorwerpen, waaronder ook vele uit gekoloniseerde gebieden."@nl ;
+  schema:text "Objects originating from the [Royal Cabinet of Curiosities](https://www.wikidata.org/wiki/Q34076860) are found, among others, at the [Wereldmuseum Leiden](https://www.wikidata.org/wiki/Q17339437)..."@en,
+    "Voorwerpen die afkomstig zijn het [Koninklijk Kabinet van Zeldzaamheden](https://www.wikidata.org/wiki/Q34076860) bevinden in zich onder andere in het [Wereldmuseum Leiden](https://www.wikidata.org/wiki/Q17339437)..."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:contentLocation [
+    a schema:Place ;
+    schema:name "China"@en, "China"@nl ;
+    schema:sameAs <https://www.geonames.org/1814991/people-s-republic-of-china.html>
+  ] ;
+  schema:keywords [
+    a schema:DefinedTerm ;
+    schema:name "Collection"@en, "Collectie"@nl ;
+    schema:sameAs <http://vocab.getty.edu/aat/300025976>
+  ] ;
+  schema:isPartOf <https://guides.example.org/level-2a> ;
+  schema:citation [
+    a schema:CreativeWork ;
+    schema:name "NL-HlmNHA 476 5"@en, "NL-HlmNHA 476 5"@nl ;
+    schema:description "Concerns the inventory of the archive of the Royal Cabinet of Curiosities within the archive of the Rijksmuseum and its legal predecessors."@en,
+      "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
+    schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
+  ] .
+
+##########
+
+<https://guides.example.org/level-1b>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "How can I use the data hub for my research?"@en, "Hoe kan ik de datahub gebruiken voor mijn onderzoek?"@nl ;
+  schema:abstract "How can the datahub help me in conducting (provenance) research?"@en,
+    "Hoe kan de datahub mij helpen bij het doen van (herkomst)onderzoek?"@nl ;
+  schema:text "In the research aides on this website, we explain how to conduct research into the provenance of [objects from a colonial context](https://app.colonialcollections.nl/en/faq)"@en,
+    "In de zoekhulpen op deze website leggen we je uit hoe je onderzoek kunt doen naar de herkomst van [voorwerpen uit een koloniale context](https://app.colonialcollections.nl/en/faq)"@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:isPartOf <https://guides.example.org/top-level> .
+
+##########
+
+<https://guides.example.org/level-1c>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Sources"@en, "Bronnen"@nl ;
+  schema:abstract "Where can you find sources for provenance research and how should you approach them critically?"@en,
+    "Waar kan je bronnen voor herkomstonderzoek vinden en hoe moet je deze kritisch benaderen?"@nl ;
+  schema:text "When researching the provenance of objects from colonial contexts, it is important to keep the following issues in mind:..."@en,
+    "Bij het onderzoek naar de herkomst van voorwerpen uit koloniale contexten is het belangrijk om de volgende punten in gedachten te houden..."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:isPartOf <https://guides.example.org/top-level> ;
+  schema:hasPart <https://guides.example.org/level-2c> .
+
+<https://guides.example.org/level-2c>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Trade"@en, "Handel"@nl ;
+  schema:abstract "Trade in colonial objects and goods formed the basis for ethnographic (museum) collections in the Netherlands."@en,
+    "De handel in koloniale voorwerpen en goederen stond aan de basis van de vorming van etnografische (museum)collecties in Nederland."@nl ;
+  schema:text "Trade in colonial objects and goods was at the heart of the formation of collections in the Netherlands. Trade and sales played a central role in the circulation of these objects in Europe."@en,
+    "De handel in koloniale voorwerpen en goederen stond aan de basis van de vorming van collecties in Nederland. Handel en verkoop speelden een centrale rol in de circulatie van deze voorwerpen in Europa."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:contentLocation [
+    a schema:Place ;
+    schema:name "Congo"@en, "Congo"@nl ;
+    schema:sameAs <https://www.geonames.org/203312/democratic-republic-of-the-congo.html>
+  ] ;
+  schema:keywords [
+    a schema:DefinedTerm ;
+    schema:name "Art trade"@en, "Kunstandel"@nl ;
+    schema:sameAs <https://data.cultureelerfgoed.nl/term/id/cht/894a3834-2f95-4ed5-bf11-3f4170801bbf>
+  ] ;
+  schema:isPartOf <https://guides.example.org/level-1c> ;
+  schema:hasPart <https://guides.example.org/level-3c> ;
+  schema:citation [
+    a schema:CreativeWork ;
+    schema:name "Art Sales Catalogues Online"@en, "Art Sales Catalogues Online"@nl ;
+    schema:description "This database is based on the Répertoire des Catalogues de Ventes Publiques by Frits Lugt. The digitized auction catalogs of the RKD are also accessible through this database."@en,
+      "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
+    schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
+  ] .
+
+<https://guides.example.org/level-3c>
+  a schema:TextDigitalDocument ;
+  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
+  schema:name "Kunsthandel Van Lier"@en, "Kunsthandel Van Lier"@nl ;
+  schema:abstract "Kunsthandel Van Lier dealt in artifacts and ethnographic objects from, among other regions, Africa, Asia and North America."@en,
+    "Kunsthandel Van Lier handelde in kunstvoorwerpen en etnografica uit onder andere Afrika, Azië en Noord-Amerika."@nl ;
+  schema:text "[Carel van Lier]](https://www.wikidata.org/wiki/Q2531642) (1897-1945) started a gallery in [Laren](https://www.geonames.org/2751874/laren.html) in 1924 and moved to Amsterdam three years later..."@en,
+    "[Carel van Lier](https://www.wikidata.org/wiki/Q2531642) (1897-1945) begon in 1924 een galerie in [Laren](https://www.geonames.org/2751874/laren.html) en verhuisde drie jaar later naar Amsterdam..."@nl ;
+  schema:encodingFormat "text/markdown" ;
+  schema:contentLocation [
+    a schema:Place ;
+    schema:name "Africa"@en, "Afrika"@nl ;
+    schema:sameAs <https://www.geonames.org/6255146/africa.html>
+  ] ;
+  schema:keywords [
+    a schema:DefinedTerm ;
+    schema:name "Art market"@en, "Kunstmarkt"@nl ;
+    schema:sameAs <http://vocab.getty.edu/aat/300055675>
+  ] ;
+  schema:isPartOf <https://guides.example.org/level-2c> ;
+  schema:citation [
+    a schema:CreativeWork ;
+    schema:name "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@en, "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@nl ;
+    schema:description "Letters and postcards, mainly from artists, and other papers covering the period 1927-1948"@en,
+      "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
+    schema:url <https://rkd.nl/nl/explore/collections/108>
+  ] .

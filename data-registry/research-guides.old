@@ -1,54 +1,10 @@
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix la: <https://linked.art/ns/terms/> .
 @prefix schema: <https://schema.org/> .
 
-<https://guides.example.org/top-set>
-  a la:Set ;
-  schema:name "Digital research guide"@en, "Digitale onderzoeksgids"@nl ;
-  schema:abstract "Research aides for conducting provenance research into colonial collections"@en, "Zoekhulpen bij het doen van herkomstonderzoek naar koloniale collecties"@nl ;
-  schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
-  schema:encodingFormat "text/markdown" ;
-  la:has_member <https://guides.example.org/level-1-set>,
-                <https://guides.example.org/level-2-set>,
-                <https://guides.example.org/level-3-set>.
-
-<https://guides.example.org/level-1-set>
-  a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "1"
-  ] ;
-  la:has_member <https://guides.example.org/level-1a>,
-                <https://guides.example.org/level-1b>,
-                <https://guides.example.org/level-1c> .
-
-<https://guides.example.org/level-2-set>
-  a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "2"
-  ] ;
-  la:has_member <https://guides.example.org/level-2a>,
-                <https://guides.example.org/level-2c> .
-
-<https://guides.example.org/level-3-set>
-  a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "3"
-  ] ;
-  la:has_member <https://guides.example.org/level-3a>,
-                <https://guides.example.org/level-3c> .
-
-# For BC - remove when the la:Sets are in use
 <https://guides.example.org/top-level>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
-  schema:name "Digital research guide"@en, "Digitale onderzoeksgids"@nl ;
-  schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
+  schema:name "Research Guides"@en, "Onderzoeksgidsen"@nl ;
+  schema:text "What are the Research Guides?"@en, "Wat zijn de onderzoeksgidsen?"@nl ;
   schema:encodingFormat "text/markdown" ;
   schema:hasPart <https://guides.example.org/level-1a>, <https://guides.example.org/level-1b>, <https://guides.example.org/level-1c> .
 

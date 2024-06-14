@@ -19,6 +19,7 @@
     crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
     crm:P190_has_symbolic_content "1"
   ] ;
+  la:member_of <https://guides.example.org/top-set> ;
   la:has_member <https://guides.example.org/level-1a>,
                 <https://guides.example.org/level-1b>,
                 <https://guides.example.org/level-1c> .
@@ -30,6 +31,7 @@
     crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
     crm:P190_has_symbolic_content "2"
   ] ;
+  la:member_of <https://guides.example.org/top-set> ;
   la:has_member <https://guides.example.org/level-2a>,
                 <https://guides.example.org/level-2c> .
 
@@ -40,6 +42,7 @@
     crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
     crm:P190_has_symbolic_content "3"
   ] ;
+  la:member_of <https://guides.example.org/top-set> ;
   la:has_member <https://guides.example.org/level-3a>,
                 <https://guides.example.org/level-3c> .
 

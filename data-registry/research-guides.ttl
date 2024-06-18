@@ -84,9 +84,7 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-3a>,
-               <https://guides.example.org/level-3c>,
-               <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/level-3a> .
 
 <https://guides.example.org/level-3a>
   a schema:TextDigitalDocument ;
@@ -114,8 +112,7 @@
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
     schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-2a>,
-               <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/level-2c> .
 
 ##########
 
@@ -168,8 +165,7 @@
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
     schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-3c>,
-               <https://guides.example.org/level-3a> .
+  rdfs:seeAlso <https://guides.example.org/level-3c> .
 
 <https://guides.example.org/level-3c>
   a schema:TextDigitalDocument ;
@@ -197,4 +193,4 @@
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
     schema:url <https://rkd.nl/nl/explore/collections/108>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/level-2a> .

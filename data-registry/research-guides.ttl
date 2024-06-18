@@ -47,15 +47,6 @@
   la:has_member <https://guides.example.org/level-3a>,
                 <https://guides.example.org/level-3c> .
 
-# For BC - remove when the la:Sets are in use
-<https://guides.example.org/top-level>
-  a schema:TextDigitalDocument ;
-  schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
-  schema:name "Digital research guide"@en, "Digitale onderzoeksgids"@nl ;
-  schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
-  schema:encodingFormat "text/markdown" ;
-  schema:hasPart <https://guides.example.org/level-1a>, <https://guides.example.org/level-1b>, <https://guides.example.org/level-1c> .
-
 <https://guides.example.org/level-1a>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
@@ -65,8 +56,7 @@
   schema:text "Provenance research goes through several stages. Depending on the purpose of your research, you go through one or more steps. In practice, the research steps intertwine and can often be carried out simultaneously."@en,
     "Herkomstonderzoek verloopt in verschillende fasen. Afhankelijk van het doel van je onderzoek doorloop je één of meerdere stappen. In de praktijk lopen de onderzoeksstappen in elkaar over en kunnen ze vaak gelijktijdig worden uitgevoerd."@nl ;
   schema:encodingFormat "text/plain" ;
-  schema:isPartOf <https://guides.example.org/top-level> ;
-  schema:hasPart <https://guides.example.org/level-2a> .
+  rdfs:seeAlso <https://guides.example.org/level-2a> .
 
 <https://guides.example.org/level-2a>
   a schema:TextDigitalDocument ;
@@ -87,8 +77,6 @@
     schema:name "Midshipman"@en, "Adelborst"@nl ;
     schema:sameAs <https://www.wikidata.org/wiki/Q11141137>
   ] ;
-  schema:isPartOf <https://guides.example.org/level-1a> ;
-  schema:hasPart <https://guides.example.org/level-3a> ;
   schema:citation [
     a schema:CreativeWork ;
     schema:name "Regeeringsalmanak voor Nederlandsch-Indië"@en, "Regeeringsalmanak voor Nederlandsch-Indië"@nl ;
@@ -96,7 +84,8 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-3c>,
+  rdfs:seeAlso <https://guides.example.org/level-3a>,
+               <https://guides.example.org/level-3c>,
                <https://guides.example.org/level-2c> .
 
 <https://guides.example.org/level-3a>
@@ -118,7 +107,6 @@
     schema:name "Collection"@en, "Collectie"@nl ;
     schema:sameAs <http://vocab.getty.edu/aat/300025976>
   ] ;
-  schema:isPartOf <https://guides.example.org/level-2a> ;
   schema:citation [
     a schema:CreativeWork ;
     schema:name "NL-HlmNHA 476 5"@en, "NL-HlmNHA 476 5"@nl ;
@@ -139,8 +127,7 @@
     "Hoe kan de datahub mij helpen bij het doen van (herkomst)onderzoek?"@nl ;
   schema:text "In the research aides on this website, we explain how to conduct research into the provenance of [objects from a colonial context](https://app.colonialcollections.nl/en/faq)"@en,
     "In de zoekhulpen op deze website leggen we je uit hoe je onderzoek kunt doen naar de herkomst van [voorwerpen uit een koloniale context](https://app.colonialcollections.nl/en/faq)"@nl ;
-  schema:encodingFormat "text/markdown" ;
-  schema:isPartOf <https://guides.example.org/top-level> .
+  schema:encodingFormat "text/markdown" .
 
 ##########
 
@@ -153,8 +140,7 @@
   schema:text "When researching the provenance of objects from colonial contexts, it is important to keep the following issues in mind:..."@en,
     "Bij het onderzoek naar de herkomst van voorwerpen uit koloniale contexten is het belangrijk om de volgende punten in gedachten te houden..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  schema:isPartOf <https://guides.example.org/top-level> ;
-  schema:hasPart <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/level-2c> .
 
 <https://guides.example.org/level-2c>
   a schema:TextDigitalDocument ;
@@ -175,8 +161,6 @@
     schema:name "Art trade"@en, "Kunstandel"@nl ;
     schema:sameAs <https://data.cultureelerfgoed.nl/term/id/cht/894a3834-2f95-4ed5-bf11-3f4170801bbf>
   ] ;
-  schema:isPartOf <https://guides.example.org/level-1c> ;
-  schema:hasPart <https://guides.example.org/level-3c> ;
   schema:citation [
     a schema:CreativeWork ;
     schema:name "Art Sales Catalogues Online"@en, "Art Sales Catalogues Online"@nl ;
@@ -206,7 +190,6 @@
     schema:name "Art market"@en, "Kunstmarkt"@nl ;
     schema:sameAs <http://vocab.getty.edu/aat/300055675>
   ] ;
-  schema:isPartOf <https://guides.example.org/level-2c> ;
   schema:citation [
     a schema:CreativeWork ;
     schema:name "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@en, "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@nl ;

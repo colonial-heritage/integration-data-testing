@@ -103,6 +103,7 @@ jobs:
         with:
           path: ./data
           sparse-checkout: geonames
+          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -120,6 +121,8 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./geonames/data/data.tar.zst && tar --zstd -xf ./geonames/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create-geonames/dist/cli.js create \
             --resource-dir ./geonames/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
@@ -153,6 +156,7 @@ jobs:
         with:
           path: ./data
           sparse-checkout: constituents
+          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -170,6 +174,8 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./constituents/data/data.tar.zst && tar --zstd -xf ./constituents/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./constituents/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
@@ -205,6 +211,7 @@ jobs:
         with:
           path: ./data
           sparse-checkout: objects
+          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -222,6 +229,8 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./objects/data/data.tar.zst && tar --zstd -xf ./objects/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./objects/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
@@ -257,6 +266,7 @@ jobs:
         with:
           path: ./data
           sparse-checkout: datasets
+          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -274,6 +284,8 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./datasets/data/data.tar.zst && tar --zstd -xf ./datasets/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./datasets/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \

@@ -6,42 +6,42 @@ on:
     paths: ["data-registry/**/*.ttl", "**/queries/**/*.rq"]
 
 jobs:
-  update-data-registry:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout data repository
-        uses: actions/checkout@v4
-        with:
-          path: ./data
-          sparse-checkout: data-registry
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          path: ./code
-          repository: colonial-heritage/integration-layer
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install app
-        run: |
-          cd ./code
-          npm install --no-progress
-          npx turbo run build --filter=@colonial-collections/data-registry
-      - name: Create graphs
-        run: |
-          cd ./data
-          ../code/apps/data-registry/dist/cli.js upload \
-            --glob-pattern "data-registry/**/*.ttl" \
-            --graph-base-iri "https://data.colonialcollections.nl" \
-            --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
-            --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
-            --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
-            --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_KG }}" \
-            --triplydb-service "kg"
+  # update-data-registry:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout data repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./data
+  #         sparse-checkout: data-registry
+  #     - name: Checkout code repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./code
+  #         repository: colonial-heritage/integration-layer
+  #     - name: Install Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "20"
+  #     - name: Install app
+  #       run: |
+  #         cd ./code
+  #         npm install --no-progress
+  #         npx turbo run build --filter=@colonial-collections/data-registry
+  #     - name: Create graphs
+  #       run: |
+  #         cd ./data
+  #         ../code/apps/data-registry/dist/cli.js upload \
+  #           --glob-pattern "data-registry/**/*.ttl" \
+  #           --graph-base-iri "https://data.colonialcollections.nl" \
+  #           --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
+  #           --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
+  #           --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
+  #           --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_KG }}" \
+  #           --triplydb-service "kg"
 
   update-aat:
-    needs: [update-data-registry]
+    # needs: [update-data-registry]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout data repository
@@ -49,6 +49,7 @@ jobs:
         with:
           path: ./data
           sparse-checkout: aat
+          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -66,6 +67,8 @@ jobs:
       - name: Create graph
         run: |
           cd ./data
+          mkdir -p "$RUNNER_TEMP"
+          test -f ./aat/data/data.tar.zst && tar --zstd -xf ./aat/data/data.tar.zst -C "$RUNNER_TEMP"
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./aat/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
@@ -91,208 +94,208 @@ jobs:
           git commit --quiet -a -m "Save changes" || true
           git push --force -u origin
 
-  update-geonames:
-    needs: [update-aat]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout data repository
-        uses: actions/checkout@v4
-        with:
-          path: ./data
-          sparse-checkout: geonames
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          path: ./code
-          repository: colonial-heritage/integration-layer
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install app
-        run: |
-          cd ./code
-          npm install --no-progress
-          npx turbo run build --filter=@colonial-collections/graph-create-geonames
-      - name: Create graph
-        run: |
-          cd ./data
-          ../code/apps/graph-create-geonames/dist/cli.js create \
-            --resource-dir ./geonames/resources \
-            --data-file "$RUNNER_TEMP/data.sqlite" \
-            --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --iterate-locations-query-file ./geonames/queries/iterate-locations.rq \
-            --iterate-countries-query-file ./geonames/queries/iterate-countries.rq \
-            --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
-            --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
-            --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
-            --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_KG }}" \
-            --triplydb-service "kg" \
-            --graph-name "https://data.colonialcollections.nl/geonames" \
-            --temp-dir "$RUNNER_TEMP"
-      - name: Save changes
-        run: |
-          cd ./data
-          mkdir -p ./geonames/data
-          test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./geonames/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit --quiet -a -m "Save changes" || true
-          git push --force -u origin
+  # update-geonames:
+  #   needs: [update-aat]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout data repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./data
+  #         sparse-checkout: geonames
+  #     - name: Checkout code repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./code
+  #         repository: colonial-heritage/integration-layer
+  #     - name: Install Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "20"
+  #     - name: Install app
+  #       run: |
+  #         cd ./code
+  #         npm install --no-progress
+  #         npx turbo run build --filter=@colonial-collections/graph-create-geonames
+  #     - name: Create graph
+  #       run: |
+  #         cd ./data
+  #         ../code/apps/graph-create-geonames/dist/cli.js create \
+  #           --resource-dir ./geonames/resources \
+  #           --data-file "$RUNNER_TEMP/data.sqlite" \
+  #           --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --iterate-locations-query-file ./geonames/queries/iterate-locations.rq \
+  #           --iterate-countries-query-file ./geonames/queries/iterate-countries.rq \
+  #           --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
+  #           --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
+  #           --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
+  #           --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_KG }}" \
+  #           --triplydb-service "kg" \
+  #           --graph-name "https://data.colonialcollections.nl/geonames" \
+  #           --temp-dir "$RUNNER_TEMP"
+  #     - name: Save changes
+  #       run: |
+  #         cd ./data
+  #         mkdir -p ./geonames/data
+  #         test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./geonames/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
+  #         git config --global user.name "github-actions[bot]"
+  #         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  #         git add .
+  #         git commit --quiet -a -m "Save changes" || true
+  #         git push --force -u origin
 
-  update-constituents:
-    needs: [update-geonames]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout data repository
-        uses: actions/checkout@v4
-        with:
-          path: ./data
-          sparse-checkout: constituents
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          path: ./code
-          repository: colonial-heritage/integration-layer
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install app
-        run: |
-          cd ./code
-          npm install --no-progress
-          npx turbo run build --filter=@colonial-collections/graph-create
-      - name: Create graph
-        run: |
-          cd ./data
-          ../code/apps/graph-create/dist/cli.js create \
-            --resource-dir ./constituents/resources \
-            --data-file "$RUNNER_TEMP/data.sqlite" \
-            --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --iterate-query-file ./constituents/queries/iterate.rq \
-            --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --generate-query-file ./constituents/queries/generate.rq \
-            --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
-            --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
-            --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
-            --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
-            --triplydb-service "search" \
-            --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
-            --graph-name "https://data.colonialcollections.nl/constituents" \
-            --temp-dir "$RUNNER_TEMP"
-      - name: Save changes
-        run: |
-          cd ./data
-          mkdir -p ./constituents/data
-          test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./constituents/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit --quiet -a -m "Save changes" || true
-          git push --force -u origin
+  # update-constituents:
+  #   needs: [update-geonames]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout data repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./data
+  #         sparse-checkout: constituents
+  #     - name: Checkout code repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./code
+  #         repository: colonial-heritage/integration-layer
+  #     - name: Install Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "20"
+  #     - name: Install app
+  #       run: |
+  #         cd ./code
+  #         npm install --no-progress
+  #         npx turbo run build --filter=@colonial-collections/graph-create
+  #     - name: Create graph
+  #       run: |
+  #         cd ./data
+  #         ../code/apps/graph-create/dist/cli.js create \
+  #           --resource-dir ./constituents/resources \
+  #           --data-file "$RUNNER_TEMP/data.sqlite" \
+  #           --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --iterate-query-file ./constituents/queries/iterate.rq \
+  #           --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --generate-query-file ./constituents/queries/generate.rq \
+  #           --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
+  #           --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
+  #           --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
+  #           --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
+  #           --triplydb-service "search" \
+  #           --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
+  #           --graph-name "https://data.colonialcollections.nl/constituents" \
+  #           --temp-dir "$RUNNER_TEMP"
+  #     - name: Save changes
+  #       run: |
+  #         cd ./data
+  #         mkdir -p ./constituents/data
+  #         test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./constituents/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
+  #         git config --global user.name "github-actions[bot]"
+  #         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  #         git add .
+  #         git commit --quiet -a -m "Save changes" || true
+  #         git push --force -u origin
 
-  update-objects:
-    needs: [update-constituents]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout data repository
-        uses: actions/checkout@v4
-        with:
-          path: ./data
-          sparse-checkout: objects
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          path: ./code
-          repository: colonial-heritage/integration-layer
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install app
-        run: |
-          cd ./code
-          npm install --no-progress
-          npx turbo run build --filter=@colonial-collections/graph-create
-      - name: Create graph
-        run: |
-          cd ./data
-          ../code/apps/graph-create/dist/cli.js create \
-            --resource-dir ./objects/resources \
-            --data-file "$RUNNER_TEMP/data.sqlite" \
-            --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --iterate-query-file ./objects/queries/iterate.rq \
-            --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --generate-query-file ./objects/queries/generate.rq \
-            --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
-            --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
-            --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
-            --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
-            --triplydb-service "search" \
-            --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
-            --graph-name "https://data.colonialcollections.nl/objects" \
-            --temp-dir "$RUNNER_TEMP"
-      - name: Save changes
-        run: |
-          cd ./data
-          mkdir -p ./objects/data
-          test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./objects/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit --quiet -a -m "Save changes" || true
-          git push --force -u origin
+  # update-objects:
+  #   needs: [update-constituents]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout data repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./data
+  #         sparse-checkout: objects
+  #     - name: Checkout code repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./code
+  #         repository: colonial-heritage/integration-layer
+  #     - name: Install Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "20"
+  #     - name: Install app
+  #       run: |
+  #         cd ./code
+  #         npm install --no-progress
+  #         npx turbo run build --filter=@colonial-collections/graph-create
+  #     - name: Create graph
+  #       run: |
+  #         cd ./data
+  #         ../code/apps/graph-create/dist/cli.js create \
+  #           --resource-dir ./objects/resources \
+  #           --data-file "$RUNNER_TEMP/data.sqlite" \
+  #           --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --iterate-query-file ./objects/queries/iterate.rq \
+  #           --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --generate-query-file ./objects/queries/generate.rq \
+  #           --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
+  #           --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
+  #           --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
+  #           --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
+  #           --triplydb-service "search" \
+  #           --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
+  #           --graph-name "https://data.colonialcollections.nl/objects" \
+  #           --temp-dir "$RUNNER_TEMP"
+  #     - name: Save changes
+  #       run: |
+  #         cd ./data
+  #         mkdir -p ./objects/data
+  #         test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./objects/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
+  #         git config --global user.name "github-actions[bot]"
+  #         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  #         git add .
+  #         git commit --quiet -a -m "Save changes" || true
+  #         git push --force -u origin
 
-  update-datasets:
-    needs: [update-objects]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout data repository
-        uses: actions/checkout@v4
-        with:
-          path: ./data
-          sparse-checkout: datasets
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          path: ./code
-          repository: colonial-heritage/integration-layer
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install app
-        run: |
-          cd ./code
-          npm install --no-progress
-          npx turbo run build --filter=@colonial-collections/graph-create
-      - name: Create graph
-        run: |
-          cd ./data
-          ../code/apps/graph-create/dist/cli.js create \
-            --resource-dir ./datasets/resources \
-            --data-file "$RUNNER_TEMP/data.sqlite" \
-            --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --iterate-query-file ./datasets/queries/iterate.rq \
-            --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --generate-query-file ./datasets/queries/generate.rq \
-            --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
-            --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
-            --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
-            --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
-            --triplydb-service "search" \
-            --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
-            --graph-name "https://data.colonialcollections.nl/datasets" \
-            --temp-dir "$RUNNER_TEMP"
-      - name: Save changes
-        run: |
-          cd ./data
-          mkdir -p ./datasets/data
-          test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./datasets/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit --quiet -a -m "Save changes" || true
-          git push --force -u origin
+  # update-datasets:
+  #   needs: [update-objects]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout data repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./data
+  #         sparse-checkout: datasets
+  #     - name: Checkout code repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         path: ./code
+  #         repository: colonial-heritage/integration-layer
+  #     - name: Install Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "20"
+  #     - name: Install app
+  #       run: |
+  #         cd ./code
+  #         npm install --no-progress
+  #         npx turbo run build --filter=@colonial-collections/graph-create
+  #     - name: Create graph
+  #       run: |
+  #         cd ./data
+  #         ../code/apps/graph-create/dist/cli.js create \
+  #           --resource-dir ./datasets/resources \
+  #           --data-file "$RUNNER_TEMP/data.sqlite" \
+  #           --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --iterate-query-file ./datasets/queries/iterate.rq \
+  #           --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+  #           --generate-query-file ./datasets/queries/generate.rq \
+  #           --triplydb-instance-url "${{ vars.TRIPLYDB_INSTANCE_URL }}" \
+  #           --triplydb-api-token "${{ secrets.TRIPLYDB_API_TOKEN }}" \
+  #           --triplydb-account "${{ vars.TRIPLYDB_ACCOUNT }}" \
+  #           --triplydb-dataset "${{ vars.TRIPLYDB_DATASET_SG }}" \
+  #           --triplydb-service "search" \
+  #           --triplydb-service-templates-file "../code/packages/triplydb/data/search-graph-templates.json" \
+  #           --graph-name "https://data.colonialcollections.nl/datasets" \
+  #           --temp-dir "$RUNNER_TEMP"
+  #     - name: Save changes
+  #       run: |
+  #         cd ./data
+  #         mkdir -p ./datasets/data
+  #         test -f "$RUNNER_TEMP/data.sqlite" && tar --zstd -cf ./datasets/data/data.tar.zst -C "$RUNNER_TEMP" data.sqlite
+  #         git config --global user.name "github-actions[bot]"
+  #         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  #         git add .
+  #         git commit --quiet -a -m "Save changes" || true
+  #         git push --force -u origin

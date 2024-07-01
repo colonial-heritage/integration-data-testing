@@ -49,7 +49,6 @@ jobs:
         with:
           path: ./data
           sparse-checkout: aat
-          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -103,7 +102,6 @@ jobs:
         with:
           path: ./data
           sparse-checkout: geonames
-          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -156,7 +154,6 @@ jobs:
         with:
           path: ./data
           sparse-checkout: constituents
-          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -211,7 +208,6 @@ jobs:
         with:
           path: ./data
           sparse-checkout: objects
-          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
@@ -266,7 +262,6 @@ jobs:
         with:
           path: ./data
           sparse-checkout: datasets
-          lfs: true
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:

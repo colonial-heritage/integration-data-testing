@@ -40,6 +40,17 @@
     schema:addressCountry "Nederland"
   ] .
 
+<https://www.niod.nl/>
+  a schema:Organization ;
+  schema:name "NIOD Instituut voor Oorlogs-, Holocaust- en Genocidestudies"@nl, "NIOD Institute for War, Holocaust and Genocide Studies"@en ;
+  schema:url <https://www.niod.nl/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Herengracht  380" ;
+    schema:postalCode "1016 CJ" ;
+    schema:addressLocality "Amsterdam"@nl, "Amsterdam"@en ;
+    schema:addressCountry "Nederland"@nl, "Netherlands"@en
+  ] .
 
 <https://research.example.org/>
   a schema:Organization ;

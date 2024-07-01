@@ -602,3 +602,51 @@
   dqv:computedOn <https://example.org/datasets/14/distributions/1> ;
   dqv:isMeasurementOf cc-metrics:rdf-format ;
   dqv:value "false"^^xsd:boolean .
+
+# Dataset NIOD
+
+<https://example.org/datasets/NIOD>
+  dqv:hasQualityMeasurement <https://example.org/datasets/NIOD/measurements/1> ,
+                            <https://example.org/datasets/NIOD/measurements/2> .
+
+<https://example.org/datasets/NIOD/measurements/1>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD> ;
+  dqv:isMeasurementOf cc-metrics:languages ;
+  dqv:value "true"^^xsd:boolean .
+
+<https://example.org/datasets/NIOD/measurements/2>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD> ;
+  dqv:isMeasurementOf cc-metrics:open-license ;
+  dqv:value "true"^^xsd:boolean .
+
+<https://example.org/datasets/NIOD/distributions/1>
+  dqv:hasQualityMeasurement <https://example.org/datasets/NIOD/distributions/1/measurements/1> ,
+                            <https://example.org/datasets/NIOD/distributions/1/measurements/2> ,
+                            <https://example.org/datasets/NIOD/distributions/1/measurements/3> ,
+                            <https://example.org/datasets/NIOD/distributions/1/measurements/4> .
+
+<https://example.org/datasets/NIOD/distributions/1/measurements/1>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD/distributions/1> ;
+  dqv:isMeasurementOf cc-metrics:online ;
+  dqv:value "true"^^xsd:boolean .
+
+<https://example.org/datasets/NIOD/distributions/1/measurements/2>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD/distributions/1> ;
+  dqv:isMeasurementOf cc-metrics:structured-format ;
+  dqv:value "true"^^xsd:boolean .
+
+<https://example.org/datasets/NIOD/distributions/1/measurements/3>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD/distributions/1> ;
+  dqv:isMeasurementOf cc-metrics:open-format ;
+  dqv:value "true"^^xsd:boolean .
+
+<https://example.org/datasets/NIOD/distributions/1/measurements/4>
+  a dqv:QualityMeasurement ;
+  dqv:computedOn <https://example.org/datasets/NIOD/distributions/1> ;
+  dqv:isMeasurementOf cc-metrics:rdf-format ;
+  dqv:value "true"^^xsd:boolean .

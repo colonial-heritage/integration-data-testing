@@ -255,3 +255,28 @@
   schema:name "Microsoft Word distribution of the dataset" ;
   schema:contentUrl <https://example.org/files/dataset.doc> ;
   schema:encodingFormat "application/msword" .
+
+<https://example.org/datasets/NIOD>
+  a schema:Dataset ;
+  schema:additionalType <http://vocab.getty.edu/aat/300043196> ; # Tableware
+  schema:name "NIOD Research Guides" ;
+  schema:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  schema:publisher <https://www.niod.nl/> ;
+  schema:description "Research aides for conducting provenance research into colonial collections." ;
+  schema:keywords "Provenance research", "colonial collections" ;
+  schema:dateModified "2024-07-03"^^schema:Date ;
+  schema:spatialCoverage <https://hdl.handle.net/20.500.11840/termmaster10058074> ;
+  schema:distribution <https://example.org/datasets/NIOD/distributions/1> ,
+                      <https://example.org/datasets/NIOD/distributions/2> .
+
+<https://example.org/datasets/NIOD/distributions/1>
+  a schema:DataDownload ;
+  schema:name "YAML distribution of the dataset" ;
+  schema:contentUrl <https://example.org/files/dataset.yml> ;
+  schema:encodingFormat "text/yml" .
+
+<https://example.org/datasets/4/distributions/2>
+  a schema:DataDownload ;
+  schema:name "RDF distribution of the dataset" ;
+  schema:contentUrl <https://example.org/files/dataset.rdf> ;
+  schema:encodingFormat "application/rdf" .

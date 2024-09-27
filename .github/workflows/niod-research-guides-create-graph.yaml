@@ -1,4 +1,4 @@
-name: Update Search Graph with data from dataset 'Colonial Objects' in the Knowledge Graph
+name: Update Search Graph with data from dataset 'researchGuide' in the Knowledge Graph
 
 # "At minute 0 past hour 3 and 15"
 on:

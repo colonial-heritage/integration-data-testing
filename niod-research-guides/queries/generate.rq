@@ -1,72 +1,72 @@
-# ###############################
-# # Query for generating a search graph from dataset 'Collection Archives'
-## start here tomorrow
-# ###############################
+# # ###############################
+# # # Query for generating a search graph from dataset 'Collection Archives'
+# ## start here tomorrow
+# # ###############################
 
-PREFIX cc: <https://colonialcollections.nl/schema#> # Internal ontology
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX dig: <http://www.ics.forth.gr/isl/CRMdig/>
-PREFIX gn: <http://www.geonames.org/ontology#>
-PREFIX la: <https://linked.art/ns/terms/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema: <https://schema.org/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# PREFIX cc: <https://colonialcollections.nl/schema#> # Internal ontology
+# PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+# PREFIX dig: <http://www.ics.forth.gr/isl/CRMdig/>
+# PREFIX gn: <http://www.geonames.org/ontology#>
+# PREFIX la: <https://linked.art/ns/terms/>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX schema: <https://schema.org/>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-CONSTRUCT {
-  ?this a cc:TextDigitalDocument ;
-    cc:name ?name ;
-    cc:text ?text ;
-    cc:abstract ?abstract;
-    cc:additionalType ?aatAdditionalType ;
-    cc:seeAlso ?linkFileName.
+# CONSTRUCT {
+#   ?this a cc:TextDigitalDocument ;
+#     cc:name ?name ;
+#     cc:text ?text ;
+#     cc:abstract ?abstract;
+#     cc:additionalType ?aatAdditionalType ;
+#     cc:seeAlso ?linkFileName.
 
-}
-WHERE {
-  VALUES ?this {
-    ?_iris
-  }
-
-
-#   ####################
-#   # Name
-#   ####################
-
-  OPTIONAL {
-    ?this schema:name ?name.
-  }
-
-#   ####################
-#   # Text
-#   ####################
-
-  OPTIONAL {
-    ?this schema:text ?text
-  }
-
-#   ####################
-#   # Abstract
-#   ####################
-
-    OPTIONAL {
-        ?this schema:abstract ?abstract
-    }
-
-#   ####################
-#   # aatAdditionalType
-#   ####################
-
-    OPTIONAL {
-        ?this schema:additionalType ?aatAdditionalType
-    }
-
-#   ####################
-#   # links to other documents
-#   ####################
-
-    OPTIONAL {
-        ?this rdfs:seeAlso ?linkFileName.
-    }
+# }
+# WHERE {
+#   VALUES ?this {
+#     ?_iris
+#   }
 
 
- }
+# #   ####################
+# #   # Name
+# #   ####################
+
+#   OPTIONAL {
+#     ?this schema:name ?name.
+#   }
+
+# #   ####################
+# #   # Text
+# #   ####################
+
+#   OPTIONAL {
+#     ?this schema:text ?text
+#   }
+
+# #   ####################
+# #   # Abstract
+# #   ####################
+
+#     OPTIONAL {
+#         ?this schema:abstract ?abstract
+#     }
+
+# #   ####################
+# #   # aatAdditionalType
+# #   ####################
+
+#     OPTIONAL {
+#         ?this schema:additionalType ?aatAdditionalType
+#     }
+
+# #   ####################
+# #   # links to other documents
+# #   ####################
+
+#     OPTIONAL {
+#         ?this rdfs:seeAlso ?linkFileName.
+#     }
+
+
+#  }

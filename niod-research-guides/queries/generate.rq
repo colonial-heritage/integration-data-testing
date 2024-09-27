@@ -20,6 +20,7 @@ CONSTRUCT {
     # cc:identifier ?identifier ;
     cc:name ?name ;
     cc:description ?text ;
+    cc:abstract ?abstract;
     # cc:material_en ?materialNameEn ;
     # cc:material_nl ?materialNameNl ;
     # cc:inscription ?inscription ;
@@ -78,6 +79,15 @@ WHERE {
   OPTIONAL {
     ?this schema:text ?text
   }
+
+#   ####################
+#   # Abstract
+#   ####################
+
+    OPTIONAL {
+        ?this schema:abstract ?abstract
+    }
+
 
 #   ####################
 #   # Subject

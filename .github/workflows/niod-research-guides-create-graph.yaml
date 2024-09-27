@@ -1,9 +1,10 @@
 name: Update Search Graph with data from dataset 'researchGuide' in the Knowledge Graph
 
-# "At minute 0 past hour 3 and 15"
+# 
 on:
-  schedule:
-    - cron: "0 3,15 * * *"
+  push:
+    branches: ["main"]
+    paths: ["data-registry/**/*.ttl", "**/queries/**/*.rq"]
 
 # Run a single workflow at a time
 concurrency:

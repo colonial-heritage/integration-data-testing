@@ -10,5 +10,5 @@ WHERE {
     }
   }
 }
-LIMIT ?_limit
-OFFSET ?_offset
+LIMIT 100
+OFFSET 0

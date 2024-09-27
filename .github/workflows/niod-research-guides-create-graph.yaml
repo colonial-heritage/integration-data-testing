@@ -42,8 +42,8 @@ jobs:
           ../code/apps/graph-create/dist/cli.js create \
             --resource-dir ./niod-research-guides/resources \
             --data-file "$RUNNER_TEMP/data.sqlite" \
-            --check-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
-            --check-if-run-must-continue-query-file ./niod-research-guides/queries/check.rq \
+            # --check-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
+            # --check-if-run-must-continue-query-file ./niod-research-guides/queries/check.rq \
             --iterate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \
             --iterate-query-file ./niod-research-guides/queries/iterate.rq \
             --generate-endpoint-url "${{ vars.SPARQL_ENDPOINT_URL_KG }}" \

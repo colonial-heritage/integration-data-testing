@@ -50,11 +50,17 @@
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
+  schema:alternateName "Navy"@en, "Marine"@nl ;
   schema:abstract "Army and Navy personnel who operated in colonized territories collected objects in various ways during the colonial era."@en,
     "Leger- en marinepersoneel dat actief was in gekoloniseerde gebieden, verzamelde op verschillende manieren objecten tijdens het koloniale tijdperk."@nl ;
   schema:text "Dutch authority in the [Dutch East Indies](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) and on the [Caribbean Islands](https://www.geonames.org/8505032/netherlands-antilles.html) relied heavily on the use of the military..."@en,
     "Het Nederlandse gezag in [Nederlands-Indië](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) en op de [Caribische eilanden](https://www.geonames.org/8505032/netherlands-antilles.html) steunde in belangrijke mate op de inzet van het leger."@nl ;
   schema:encodingFormat "text/markdown" ;
+  schema:contentReferenceTime [
+    a schema:Event ;
+    schema:startDate "1924" ;
+    schema:endDate "1996" ;
+  ] ;
   schema:spatial [
     a schema:Place ;
     schema:name "Netherlands Antilles"@en, "Antillen"@nl ;

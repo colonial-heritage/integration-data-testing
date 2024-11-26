@@ -9,45 +9,30 @@
   schema:abstract "Research aides for conducting provenance research into colonial collections"@en, "Zoekhulpen bij het doen van herkomstonderzoek naar koloniale collecties"@nl ;
   schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  la:has_member <https://guides.example.org/level-1-set>,
-                <https://guides.example.org/level-2-set>,
-                <https://guides.example.org/level-3-set>.
+  la:has_member <https://guides.example.org/sub-set-1>,
+                <https://guides.example.org/sub-set-2>,
+                <https://guides.example.org/sub-set-3>.
 
-<https://guides.example.org/level-1-set>
+<https://guides.example.org/sub-set-1>
   a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "1"
-  ] ;
   la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/level-1a>,
-                <https://guides.example.org/level-1b>,
-                <https://guides.example.org/level-1c> .
+  la:has_member <https://guides.example.org/sub-set-1a>,
+                <https://guides.example.org/sub-set-1b>,
+                <https://guides.example.org/sub-set-1c> .
 
-<https://guides.example.org/level-2-set>
+<https://guides.example.org/sub-set-2>
   a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "2"
-  ] ;
   la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/level-2a>,
-                <https://guides.example.org/level-2c> .
+  la:has_member <https://guides.example.org/sub-set-2a>,
+                <https://guides.example.org/sub-set-2c> .
 
-<https://guides.example.org/level-3-set>
+<https://guides.example.org/sub-set-3>
   a la:Set ;
-  crm:P1_is_identified_by [
-    a crm:E42_Identifier ;
-    crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # Identification number
-    crm:P190_has_symbolic_content "3"
-  ] ;
   la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/level-3a>,
-                <https://guides.example.org/level-3c> .
+  la:has_member <https://guides.example.org/sub-set-3a>,
+                <https://guides.example.org/sub-set-3c> .
 
-<https://guides.example.org/level-1a>
+<https://guides.example.org/sub-set-1a>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Doing research"@en, "Onderzoeken"@nl ;
@@ -56,9 +41,9 @@
   schema:text "Provenance research goes through several stages. Depending on the purpose of your research, you go through one or more steps. In practice, the research steps intertwine and can often be carried out simultaneously."@en,
     "Herkomstonderzoek verloopt in verschillende fasen. Afhankelijk van het doel van je onderzoek doorloop je één of meerdere stappen. In de praktijk lopen de onderzoeksstappen in elkaar over en kunnen ze vaak gelijktijdig worden uitgevoerd."@nl ;
   schema:encodingFormat "text/plain" ;
-  rdfs:seeAlso <https://guides.example.org/level-2a> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-2a> .
 
-<https://guides.example.org/level-2a>
+<https://guides.example.org/sub-set-2a>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
@@ -67,7 +52,7 @@
   schema:text "Dutch authority in the [Dutch East Indies](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) and on the [Caribbean Islands](https://www.geonames.org/8505032/netherlands-antilles.html) relied heavily on the use of the military..."@en,
     "Het Nederlandse gezag in [Nederlands-Indië](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) en op de [Caribische eilanden](https://www.geonames.org/8505032/netherlands-antilles.html) steunde in belangrijke mate op de inzet van het leger."@nl ;
   schema:encodingFormat "text/markdown" ;
-  schema:contentLocation [
+  schema:spatial [
     a schema:Place ;
     schema:name "Netherlands Antilles"@en, "Antillen"@nl ;
     schema:sameAs <https://www.geonames.org/8505032/netherlands-antilles.html>
@@ -84,9 +69,9 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-3a> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-3a> .
 
-<https://guides.example.org/level-3a>
+<https://guides.example.org/sub-set-3a>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Royal Cabinet of Curiosities"@en, "Koninklijk Kabinet van Zeldzaamheden"@nl ;
@@ -95,7 +80,7 @@
   schema:text "Objects originating from the [Royal Cabinet of Curiosities](https://www.wikidata.org/wiki/Q34076860) are found, among others, at the [Wereldmuseum Leiden](https://www.wikidata.org/wiki/Q17339437)..."@en,
     "Voorwerpen die afkomstig zijn het [Koninklijk Kabinet van Zeldzaamheden](https://www.wikidata.org/wiki/Q34076860) bevinden in zich onder andere in het [Wereldmuseum Leiden](https://www.wikidata.org/wiki/Q17339437)..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  schema:contentLocation [
+  schema:spatial [
     a schema:Place ;
     schema:name "China"@en, "China"@nl ;
     schema:sameAs <https://www.geonames.org/1814991/people-s-republic-of-china.html>
@@ -112,11 +97,11 @@
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
     schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-2c> .
 
 ##########
 
-<https://guides.example.org/level-1b>
+<https://guides.example.org/sub-set-1b>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "How can I use the data hub for my research?"@en, "Hoe kan ik de datahub gebruiken voor mijn onderzoek?"@nl ;
@@ -128,7 +113,7 @@
 
 ##########
 
-<https://guides.example.org/level-1c>
+<https://guides.example.org/sub-set-1c>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Sources"@en, "Bronnen"@nl ;
@@ -137,9 +122,9 @@
   schema:text "When researching the provenance of objects from colonial contexts, it is important to keep the following issues in mind:..."@en,
     "Bij het onderzoek naar de herkomst van voorwerpen uit koloniale contexten is het belangrijk om de volgende punten in gedachten te houden..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  rdfs:seeAlso <https://guides.example.org/level-2c> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-2c> .
 
-<https://guides.example.org/level-2c>
+<https://guides.example.org/sub-set-2c>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Trade"@en, "Handel"@nl ;
@@ -148,7 +133,7 @@
   schema:text "Trade in colonial objects and goods was at the heart of the formation of collections in the Netherlands. Trade and sales played a central role in the circulation of these objects in Europe."@en,
     "De handel in koloniale voorwerpen en goederen stond aan de basis van de vorming van collecties in Nederland. Handel en verkoop speelden een centrale rol in de circulatie van deze voorwerpen in Europa."@nl ;
   schema:encodingFormat "text/markdown" ;
-  schema:contentLocation [
+  schema:spatial [
     a schema:Place ;
     schema:name "Congo"@en, "Congo"@nl ;
     schema:sameAs <https://www.geonames.org/203312/democratic-republic-of-the-congo.html>
@@ -165,18 +150,24 @@
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
     schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-3c> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-3c> .
 
-<https://guides.example.org/level-3c>
+<https://guides.example.org/sub-set-3c>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Kunsthandel Van Lier"@en, "Kunsthandel Van Lier"@nl ;
+  schema:alternateName "Carel van Lier"@en, "Carel van Lier"@nl ;
   schema:abstract "Kunsthandel Van Lier dealt in artifacts and ethnographic objects from, among other regions, Africa, Asia and North America."@en,
     "Kunsthandel Van Lier handelde in kunstvoorwerpen en etnografica uit onder andere Afrika, Azië en Noord-Amerika."@nl ;
   schema:text "[Carel van Lier]](https://www.wikidata.org/wiki/Q2531642) (1897-1945) started a gallery in [Laren](https://www.geonames.org/2751874/laren.html) in 1924 and moved to Amsterdam three years later..."@en,
     "[Carel van Lier](https://www.wikidata.org/wiki/Q2531642) (1897-1945) begon in 1924 een galerie in [Laren](https://www.geonames.org/2751874/laren.html) en verhuisde drie jaar later naar Amsterdam..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  schema:contentLocation [
+  schema:contentReferenceTime [
+    a schema:Event ;
+    schema:startDate "1924" ;
+    schema:endDate "1996" ;
+  ] ;
+  schema:spatial [
     a schema:Place ;
     schema:name "Africa"@en, "Afrika"@nl ;
     schema:sameAs <https://www.geonames.org/6255146/africa.html>
@@ -193,4 +184,4 @@
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
     schema:url <https://rkd.nl/nl/explore/collections/108>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/level-2a> .
+  rdfs:seeAlso <https://guides.example.org/sub-set-2a> .

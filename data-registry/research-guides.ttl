@@ -13,6 +13,7 @@
                 <https://guides.example.org/sub-set-2>,
                 <https://guides.example.org/sub-set-3>.
 
+
 <https://guides.example.org/sub-set-1>
   a la:Set ;
   la:member_of <https://guides.example.org/top-set> ;

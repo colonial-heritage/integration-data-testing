@@ -3,39 +3,39 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 
-<https://guides.example.org/top-set>
+<https://guides.example.org/topset>
   a la:Set ;
   schema:name "Digital research guide"@en, "Digitale onderzoeksgids"@nl ;
   schema:abstract "Research aides for conducting provenance research into colonial collections"@en, "Zoekhulpen bij het doen van herkomstonderzoek naar koloniale collecties"@nl ;
   schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  la:has_member <https://guides.example.org/sub-set-1>,
-                <https://guides.example.org/sub-set-2>,
-                <https://guides.example.org/sub-set-3>.
+  la:has_member <https://guides.example.org/subset1> ,
+                <https://guides.example.org/subset2> ,
+                <https://guides.example.org/subset3> .
 
-<https://guides.example.org/sub-set-1>
+<https://guides.example.org/subset1>
   a la:Set ;
-  schema:name "Name 1"@en, "Naam 1"@nl ;
-  la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/sub-set-1a>,
-                <https://guides.example.org/sub-set-1b>,
-                <https://guides.example.org/sub-set-1c> .
+  schema:name "1. Name"@en, "1. Naam"@nl ;
+  la:member_of <https://guides.example.org/topset> ;
+  la:has_member <https://guides.example.org/guide1> ,
+                <https://guides.example.org/guide2> ,
+                <https://guides.example.org/guide3> .
 
-<https://guides.example.org/sub-set-2>
+<https://guides.example.org/subset2>
   a la:Set ;
-  schema:name "Name 2"@en, "Naam 2"@nl ;
-  la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/sub-set-2a>,
-                <https://guides.example.org/sub-set-2c> .
+  schema:name "2. Name"@en, "2. Naam"@nl ;
+  la:member_of <https://guides.example.org/topset> ;
+  la:has_member <https://guides.example.org/guide4> ,
+                <https://guides.example.org/guide5> .
 
-<https://guides.example.org/sub-set-3>
+<https://guides.example.org/subset3>
   a la:Set ;
-  schema:name "Name 3"@en, "Naam 3"@nl ;
-  la:member_of <https://guides.example.org/top-set> ;
-  la:has_member <https://guides.example.org/sub-set-3a>,
-                <https://guides.example.org/sub-set-3c> .
+  schema:name "3. Name"@en, "3. Naam"@nl ;
+  la:member_of <https://guides.example.org/topset> ;
+  la:has_member <https://guides.example.org/guide6> ,
+                <https://guides.example.org/guide7> .
 
-<https://guides.example.org/sub-set-1a>
+<https://guides.example.org/guide1>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Doing research"@en, "Onderzoeken"@nl ;
@@ -44,9 +44,9 @@
   schema:text "Provenance research goes through several stages. Depending on the purpose of your research, you go through one or more steps. In practice, the research steps intertwine and can often be carried out simultaneously."@en,
     "Herkomstonderzoek verloopt in verschillende fasen. Afhankelijk van het doel van je onderzoek doorloop je één of meerdere stappen. In de praktijk lopen de onderzoeksstappen in elkaar over en kunnen ze vaak gelijktijdig worden uitgevoerd."@nl ;
   schema:encodingFormat "text/plain" ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-2a> .
+  rdfs:seeAlso <https://guides.example.org/guide4> .
 
-<https://guides.example.org/sub-set-2a>
+<https://guides.example.org/guide4>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
@@ -78,9 +78,9 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-3a> .
+  rdfs:seeAlso <https://guides.example.org/guide6> .
 
-<https://guides.example.org/sub-set-3a>
+<https://guides.example.org/guide6>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Royal Cabinet of Curiosities"@en, "Koninklijk Kabinet van Zeldzaamheden"@nl ;
@@ -106,11 +106,11 @@
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
     schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-2c> .
+  rdfs:seeAlso <https://guides.example.org/guide5> .
 
 ##########
 
-<https://guides.example.org/sub-set-1b>
+<https://guides.example.org/guide2>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "How can I use the data hub for my research?"@en, "Hoe kan ik de datahub gebruiken voor mijn onderzoek?"@nl ;
@@ -122,7 +122,7 @@
 
 ##########
 
-<https://guides.example.org/sub-set-1c>
+<https://guides.example.org/guide3>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Sources"@en, "Bronnen"@nl ;
@@ -131,9 +131,9 @@
   schema:text "When researching the provenance of objects from colonial contexts, it is important to keep the following issues in mind:..."@en,
     "Bij het onderzoek naar de herkomst van voorwerpen uit koloniale contexten is het belangrijk om de volgende punten in gedachten te houden..."@nl ;
   schema:encodingFormat "text/markdown" ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-2c> .
+  rdfs:seeAlso <https://guides.example.org/guide5> .
 
-<https://guides.example.org/sub-set-2c>
+<https://guides.example.org/guide5>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Trade"@en, "Handel"@nl ;
@@ -159,9 +159,9 @@
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
     schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-3c> .
+  rdfs:seeAlso <https://guides.example.org/guide7> .
 
-<https://guides.example.org/sub-set-3c>
+<https://guides.example.org/guide7>
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Kunsthandel Van Lier"@en, "Kunsthandel Van Lier"@nl ;
@@ -193,4 +193,4 @@
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
     schema:url <https://rkd.nl/nl/explore/collections/108>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/sub-set-2a> .
+  rdfs:seeAlso <https://guides.example.org/guide4> .

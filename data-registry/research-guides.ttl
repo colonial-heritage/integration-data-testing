@@ -50,7 +50,7 @@
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
-  schema:alternateName "Navy"@en, "Marine"@nl ;
+  schema:alternateName "Navy"@en, "Marine"@nl, "Zeemacht"@nl ;
   schema:abstract "Army and Navy personnel who operated in colonized territories collected objects in various ways during the colonial era."@en,
     "Leger- en marinepersoneel dat actief was in gekoloniseerde gebieden, verzamelde op verschillende manieren objecten tijdens het koloniale tijdperk."@nl ;
   schema:text "Dutch authority in the [Dutch East Indies](https://www.geonames.org/1643084/republic-of-indonesia.html), [Suriname](https://www.geonames.org/3382998/republic-of-suriname.html) and on the [Caribbean Islands](https://www.geonames.org/8505032/netherlands-antilles.html) relied heavily on the use of the military..."@en,
@@ -78,7 +78,8 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/guide6> .
+  rdfs:seeAlso <https://guides.example.org/guide1> ,
+               <https://guides.example.org/guide6> .
 
 <https://guides.example.org/guide6>
   a schema:TextDigitalDocument ;
@@ -165,7 +166,7 @@
   a schema:TextDigitalDocument ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Kunsthandel Van Lier"@en, "Kunsthandel Van Lier"@nl ;
-  schema:alternateName "Carel van Lier"@en, "Carel van Lier"@nl ;
+  schema:alternateName "Carel van Lier"@en, "Carel van Lier"@nl, "Carel"@nl ;
   schema:abstract "Kunsthandel Van Lier dealt in artifacts and ethnographic objects from, among other regions, Africa, Asia and North America."@en,
     "Kunsthandel Van Lier handelde in kunstvoorwerpen en etnografica uit onder andere Afrika, Azië en Noord-Amerika."@nl ;
   schema:text "[Carel van Lier]](https://www.wikidata.org/wiki/Q2531642) (1897-1945) started a gallery in [Laren](https://www.geonames.org/2751874/laren.html) in 1924 and moved to Amsterdam three years later..."@en,

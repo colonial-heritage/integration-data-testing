@@ -47,7 +47,7 @@
   rdfs:seeAlso <https://guides.example.org/guide4> .
 
 <https://guides.example.org/guide4>
-  a schema:TextDigitalDocument ;
+  a schema:TextDigitalDocument, la:Set ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
   schema:alternateName "Navy"@en, "Marine"@nl, "Zeemacht"@nl ;
@@ -78,6 +78,7 @@
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
     schema:url <https://www.delpher.nl/>
   ] ;
+  la:has_member <https://guides.example.org/guide6> ;
   rdfs:seeAlso <https://guides.example.org/guide1> ,
                <https://guides.example.org/guide6> .
 
@@ -135,7 +136,7 @@
   rdfs:seeAlso <https://guides.example.org/guide5> .
 
 <https://guides.example.org/guide5>
-  a schema:TextDigitalDocument ;
+  a schema:TextDigitalDocument, la:Set ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Trade"@en, "Handel"@nl ;
   schema:abstract "Trade in colonial objects and goods formed the basis for ethnographic (museum) collections in the Netherlands."@en,
@@ -160,7 +161,7 @@
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
     schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
   ] ;
-  rdfs:seeAlso <https://guides.example.org/guide7> .
+  la:has_member <https://guides.example.org/guide7> .
 
 <https://guides.example.org/guide7>
   a schema:TextDigitalDocument ;

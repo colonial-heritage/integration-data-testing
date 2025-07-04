@@ -73,6 +73,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    rdfs:label "Type of secondary source:Publicatie"@nl, "Type of secondary source:Publication"@en ;
     schema:name "Regeeringsalmanak voor Nederlandsch-Indië"@en, "Regeeringsalmanak voor Nederlandsch-Indië"@nl ;
     schema:description "Via Delpher, the editions can be found by selecting the title"@en,
       "Edities van 1865 tot en met 1942 beschikbaar via Delpher en edities van 1865 tot en met 1912 beschikbaar via de digitale collecties van de Staatsbibliothek zu Berlin."@nl ;
@@ -103,6 +104,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    rdfs:label "Type of primary source:Publicatie"@nl, "Type of primary source:Publication"@en ;
     schema:name "NL-HlmNHA 476 5"@en, "NL-HlmNHA 476 5"@nl ;
     schema:description "Concerns the inventory of the archive of the Royal Cabinet of Curiosities within the archive of the Rijksmuseum and its legal predecessors."@en,
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
@@ -156,6 +158,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    rdfs:label "Type of primary source:Publicatie"@nl, "Type of primary source:Publication"@en ;
     schema:name "Art Sales Catalogues Online"@en, "Art Sales Catalogues Online"@nl ;
     schema:description "This database is based on the Répertoire des Catalogues de Ventes Publiques by Frits Lugt. The digitized auction catalogs of the RKD are also accessible through this database."@en,
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
@@ -190,6 +193,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    # No `rdfs:label`, for testing
     schema:name "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@en, "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@nl ;
     schema:description "Letters and postcards, mainly from artists, and other papers covering the period 1927-1948"@en,
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;

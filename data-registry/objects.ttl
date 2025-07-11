@@ -92,6 +92,15 @@
         crm:P72_has_language <http://vocab.getty.edu/aat/300388277> ; # English
       ] ;
     ] ;
+  ] ;
+  # Pattern: https://linked.art/model/digital/#web-pages
+  crm:P129i_is_subject_of [
+    a crm:E33_Linguistic_Object ;
+    la:digitally_carried_by [
+      a dig:D1_Digital_Object ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300264578> ; # Web page
+      la:access_point <https://id.rijksmuseum.nl/200108369>
+    ] ;
   ] .
 
 <https://example.org/objects/2>
@@ -165,6 +174,15 @@
       crm:P2_has_type <http://vocab.getty.edu/aat/300215302> ; # Digital image
       la:access_point <http://images.memorix.nl/rce/thumb/1600x1600/1f3fd6a1-164c-2fe9-c222-3c6dbd32d33d.jpg> ;
       # License or copyright statement intentionally missing
+    ] ;
+  ] ;
+  # Pattern: https://linked.art/model/digital/#web-pages
+  crm:P129i_is_subject_of [
+    a crm:E33_Linguistic_Object ;
+    la:digitally_carried_by [
+      a dig:D1_Digital_Object ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300264578> ; # Web page
+      la:access_point <https://id.rijksmuseum.nl/200112226>
     ] ;
   ] .
 

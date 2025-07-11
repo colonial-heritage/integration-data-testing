@@ -175,15 +175,6 @@
       la:access_point <http://images.memorix.nl/rce/thumb/1600x1600/1f3fd6a1-164c-2fe9-c222-3c6dbd32d33d.jpg> ;
       # License or copyright statement intentionally missing
     ] ;
-  ] ;
-  # Pattern: https://linked.art/model/digital/#web-pages
-  crm:P129i_is_subject_of [
-    a crm:E33_Linguistic_Object ;
-    la:digitally_carried_by [
-      a dig:D1_Digital_Object ;
-      crm:P2_has_type <http://vocab.getty.edu/aat/300264578> ; # Web page
-      la:access_point <https://id.rijksmuseum.nl/200112226>
-    ] ;
   ] .
 
 <https://example.org/objects/3>
@@ -336,5 +327,14 @@
         a crm:E30_Right ;
         crm:P2_has_type <https://creativecommons.org/licenses/by/4.0/> ;
       ] ;
+    ] ;
+  ] ;
+  # Pattern: https://linked.art/model/digital/#web-pages
+  crm:P129i_is_subject_of [
+    a crm:E33_Linguistic_Object ;
+    la:digitally_carried_by [
+      a dig:D1_Digital_Object ;
+      crm:P2_has_type <http://vocab.getty.edu/aat/300264578> ; # Web page
+      la:access_point <https://id.rijksmuseum.nl/200112226>
     ] ;
   ] .

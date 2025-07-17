@@ -15,7 +15,7 @@
 
 <https://guides.example.org/subset1>
   a la:Set ;
-  schema:name "1. Name"@en, "1. Naam"@nl ;
+  schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide1> ,
                 <https://guides.example.org/guide2> ,
@@ -23,14 +23,14 @@
 
 <https://guides.example.org/subset2>
   a la:Set ;
-  schema:name "2. Name"@en, "2. Naam"@nl ;
+  schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide4> ,
                 <https://guides.example.org/guide5> .
 
 <https://guides.example.org/subset3>
   a la:Set ;
-  schema:name "3. Name"@en, "3. Naam"@nl ;
+  schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide6> ,
                 <https://guides.example.org/guide7> .
@@ -55,7 +55,6 @@
 
 <https://guides.example.org/guide4>
   a schema:TextDigitalDocument, la:Set ;
-  schema:inLanguage "en", "nl" ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
   schema:alternateName "Navy"@en, "Marine"@nl, "Zeemacht"@nl ;
@@ -81,6 +80,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    schema:inLanguage "en", "nl" ;
     rdfs:label "Type of secondary source:Publicatie"@nl, "Type of secondary source:Publication"@en ;
     schema:name "Regeeringsalmanak voor Nederlandsch-Indië"@en, "Regeeringsalmanak voor Nederlandsch-Indië"@nl ;
     schema:description "Via Delpher, the editions can be found by selecting the title"@en,
@@ -103,7 +103,6 @@
 
 <https://guides.example.org/guide6>
   a schema:TextDigitalDocument ;
-  schema:inLanguage "nl" ; # Only in Dutch
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Royal Cabinet of Curiosities"@en, "Koninklijk Kabinet van Zeldzaamheden"@nl ;
   schema:abstract "The Royal Cabinet of Curiosities was established in 1816 by King William I. The collection consisted of a variety of objects, including many from colonized regions."@en,
@@ -123,6 +122,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    schema:inLanguage "en", "nl" ;
     rdfs:label "Type of primary source:Publicatie"@nl, "Type of primary source:Publication"@en ;
     schema:name "NL-HlmNHA 476 5"@en, "NL-HlmNHA 476 5"@nl ;
     schema:description "Concerns the inventory of the archive of the Royal Cabinet of Curiosities within the archive of the Rijksmuseum and its legal predecessors."@en,
@@ -172,7 +172,6 @@
 
 <https://guides.example.org/guide5>
   a schema:TextDigitalDocument, la:Set ;
-  schema:inLanguage "en" ; # Only in English
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Trade"@en, "Handel"@nl ;
   schema:abstract "Trade in colonial objects and goods formed the basis for ethnographic (museum) collections in the Netherlands."@en,
@@ -192,6 +191,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    schema:inLanguage "en", "nl" ;
     rdfs:label "Type of primary source:Publicatie"@nl, "Type of primary source:Publication"@en ;
     schema:name "Art Sales Catalogues Online"@en, "Art Sales Catalogues Online"@nl ;
     schema:description "This database is based on the Répertoire des Catalogues de Ventes Publiques by Frits Lugt. The digitized auction catalogs of the RKD are also accessible through this database."@en,
@@ -202,7 +202,6 @@
 
 <https://guides.example.org/guide7>
   a schema:TextDigitalDocument ;
-  # No `schema:inLanguage`: intentionally missing, for testing
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Kunsthandel Van Lier"@en, "Kunsthandel Van Lier"@nl ;
   schema:alternateName "Carel van Lier"@en, "Carel van Lier"@nl, "Carel"@nl ;
@@ -228,6 +227,7 @@
   ] ;
   schema:citation [
     a schema:CreativeWork ;
+    schema:inLanguage "en" ; # Only in English, for testing
     # No `rdfs:label`, for testing
     schema:name "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@en, "RKD – Nederlands Instituut voor Kunstgeschiedenis / Carel van Lier NL-HaRKD.0108"@nl ;
     schema:description "Letters and postcards, mainly from artists, and other papers covering the period 1927-1948"@en,

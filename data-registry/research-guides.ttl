@@ -44,6 +44,7 @@
   schema:text "Provenance research goes through several stages. Depending on the purpose of your research, you go through one or more steps. In practice, the research steps intertwine and can often be carried out simultaneously."@en,
     "Herkomstonderzoek verloopt in verschillende fasen. Afhankelijk van het doel van je onderzoek doorloop je één of meerdere stappen. In de praktijk lopen de onderzoeksstappen in elkaar over en kunnen ze vaak gelijktijdig worden uitgevoerd."@nl ;
   schema:encodingFormat "text/plain" ;
+  rdfs:seeAlso <https://guides.example.org/guide4> ;
   rdfs:seeAlso [
     a schema:ItemList;
     schema:itemListElement [
@@ -88,6 +89,7 @@
     schema:url <https://www.delpher.nl/>
   ] ;
   la:has_member <https://guides.example.org/guide6> ;
+  rdfs:seeAlso <https://guides.example.org/guide1>, <https://guides.example.org/guide6> ;
   rdfs:seeAlso [
     a schema:ItemList;
     schema:itemListElement [
@@ -129,6 +131,7 @@
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
     schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
   ] ;
+  rdfs:seeAlso <https://guides.example.org/guide5> ;
   rdfs:seeAlso [
     a schema:ItemList;
     schema:itemListElement [
@@ -161,6 +164,7 @@
   schema:text "When researching the provenance of objects from colonial contexts, it is important to keep the following issues in mind:..."@en,
     "Bij het onderzoek naar de herkomst van voorwerpen uit koloniale contexten is het belangrijk om de volgende punten in gedachten te houden..."@nl ;
   schema:encodingFormat "text/markdown" ;
+  rdfs:seeAlso <https://guides.example.org/guide5> ;
   rdfs:seeAlso [
     a schema:ItemList;
     schema:itemListElement [
@@ -234,6 +238,7 @@
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
     schema:url <https://rkd.nl/nl/explore/collections/108>
   ] ;
+  rdfs:seeAlso <https://guides.example.org/guide4> ;
   rdfs:seeAlso [
     a schema:ItemList;
     schema:itemListElement [

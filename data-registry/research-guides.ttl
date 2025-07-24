@@ -4,36 +4,80 @@
 @prefix schema: <https://schema.org/> .
 
 <https://guides.example.org/topset>
-  a la:Set ;
+  a la:Set, schema:ItemList ;
   schema:name "Digital research guide"@en, "Digitale onderzoeksgids"@nl ;
   schema:abstract "Research aides for conducting provenance research into colonial collections"@en, "Zoekhulpen bij het doen van herkomstonderzoek naar koloniale collecties"@nl ;
   schema:text "On this page you find various research aides that can assist..."@en, "Op deze pagina vind je verschillende zoekhulpen die je kunnen helpen bij..."@nl ;
   schema:encodingFormat "text/markdown" ;
   la:has_member <https://guides.example.org/subset1> ,
                 <https://guides.example.org/subset2> ,
-                <https://guides.example.org/subset3> .
+                <https://guides.example.org/subset3> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/subset1> ;
+    schema:position 1
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/subset2> ;
+    schema:position 2
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/subset3> ;
+    schema:position 3
+  ] .
 
 <https://guides.example.org/subset1>
-  a la:Set ;
+  a la:Set, schema:ItemList ;
   schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide1> ,
                 <https://guides.example.org/guide2> ,
-                <https://guides.example.org/guide3> .
+                <https://guides.example.org/guide3> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide1> ;
+    schema:position 1
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide2> ;
+    schema:position 2
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide3> ;
+    schema:position 3
+  ] .
 
 <https://guides.example.org/subset2>
-  a la:Set ;
+  a la:Set, schema:ItemList ;
   schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide4> ,
-                <https://guides.example.org/guide5> .
+                <https://guides.example.org/guide5> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide4> ;
+    schema:position 1
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide5> ;
+    schema:position 2
+  ] .
 
 <https://guides.example.org/subset3>
-  a la:Set ;
+  a la:Set, schema:ItemList ;
   schema:name "Name"@en, "Naam"@nl ;
   la:member_of <https://guides.example.org/topset> ;
   la:has_member <https://guides.example.org/guide6> ,
-                <https://guides.example.org/guide7> .
+                <https://guides.example.org/guide7> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide6> ;
+    schema:position 1
+  ], [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide7> ;
+    schema:position 2
+  ] .
 
 <https://guides.example.org/guide1>
   a schema:TextDigitalDocument ;
@@ -55,7 +99,7 @@
   ] .
 
 <https://guides.example.org/guide4>
-  a schema:TextDigitalDocument, la:Set ;
+  a schema:TextDigitalDocument, la:Set, schema:ItemList ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Military and navy"@en, "Leger en Marine"@nl ;
   schema:alternateName "Navy"@en, "Marine"@nl, "Zeemacht"@nl ;
@@ -89,6 +133,11 @@
     schema:url <https://www.delpher.nl/>
   ] ;
   la:has_member <https://guides.example.org/guide6> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide6> ;
+    schema:position 1
+  ] ;
   rdfs:seeAlso <https://guides.example.org/guide1>, <https://guides.example.org/guide6> ;
   rdfs:seeAlso [
     a schema:ItemList;
@@ -175,7 +224,7 @@
   ] .
 
 <https://guides.example.org/guide5>
-  a schema:TextDigitalDocument, la:Set ;
+  a schema:TextDigitalDocument, la:Set, schema:ItemList ;
   schema:additionalType <http://vocab.getty.edu/aat/300027029> ; # Guideline
   schema:name "Trade"@en, "Handel"@nl ;
   schema:abstract "Trade in colonial objects and goods formed the basis for ethnographic (museum) collections in the Netherlands."@en,
@@ -202,7 +251,12 @@
       "Database gebaseerd op het Répertoire des Catalogues de Ventes Publiques door Frits Lugt. De gedigitaliseerde veilingcatalogi van het RKD zijn ook via deze database toegankelijk."@nl ;
     schema:url <https://primarysources.brillonline.com/browse/art-sales-catalogues-online>
   ] ;
-  la:has_member <https://guides.example.org/guide7> .
+  la:has_member <https://guides.example.org/guide7> ;
+  schema:itemListElement [
+    a schema:ListItem ;
+    schema:item <https://guides.example.org/guide7> ;
+    schema:position 1
+  ] .
 
 <https://guides.example.org/guide7>
   a schema:TextDigitalDocument ;

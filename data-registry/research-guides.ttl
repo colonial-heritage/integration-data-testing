@@ -36,15 +36,15 @@
   schema:itemListElement [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide1> ;
-    schema:position 1
+    schema:position 4
   ], [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide2> ;
-    schema:position 2
+    schema:position 5
   ], [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide3> ;
-    schema:position 3
+    schema:position 6
   ] .
 
 <https://guides.example.org/subset2>
@@ -56,11 +56,11 @@
   schema:itemListElement [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide4> ;
-    schema:position 1
+    schema:position 7
   ], [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide5> ;
-    schema:position 2
+    schema:position 8
   ] .
 
 <https://guides.example.org/subset3>
@@ -72,11 +72,11 @@
   schema:itemListElement [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide6> ;
-    schema:position 1
+    schema:position 9
   ], [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide7> ;
-    schema:position 2
+    schema:position 10
   ] .
 
 <https://guides.example.org/guide1>
@@ -94,7 +94,7 @@
     schema:itemListElement [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide4> ;
-      schema:position 1
+      schema:position 11
     ]
   ] .
 
@@ -136,7 +136,7 @@
   schema:itemListElement [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide6> ;
-    schema:position 1
+    schema:position 12
   ] ;
   rdfs:seeAlso <https://guides.example.org/guide1>, <https://guides.example.org/guide6> ;
   rdfs:seeAlso [
@@ -144,11 +144,11 @@
     schema:itemListElement [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide1> ;
-      schema:position 2
+      schema:position 13
     ], [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide6> ;
-      schema:position 1
+      schema:position 14
     ]
   ] .
 
@@ -186,7 +186,7 @@
     schema:itemListElement [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide5> ;
-      schema:position 1
+      schema:position 15
     ]
   ] .
 
@@ -219,7 +219,7 @@
     schema:itemListElement [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide5> ;
-      schema:position 1
+      schema:position 16
     ]
   ] .
 
@@ -255,7 +255,7 @@
   schema:itemListElement [
     a schema:ListItem ;
     schema:item <https://guides.example.org/guide7> ;
-    schema:position 1
+    schema:position 17
   ] .
 
 <https://guides.example.org/guide7>
@@ -298,6 +298,6 @@
     schema:itemListElement [
       a schema:ListItem ;
       schema:item <https://guides.example.org/guide4> ;
-      schema:position 1
+      schema:position 18
     ]
   ] .

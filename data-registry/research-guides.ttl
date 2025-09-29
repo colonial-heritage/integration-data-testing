@@ -179,6 +179,14 @@
     schema:description "Concerns the inventory of the archive of the Royal Cabinet of Curiosities within the archive of the Rijksmuseum and its legal predecessors."@en,
       "Betreft de inventaris toegang van het archief van het Koninklijk Kabinet van Zeldzaamheden binnen het archief van het Rijksmuseum en rechtsvoorgangers."@nl ;
     schema:url <https://hdl.handle.net/21.12102/2422AD00C789442FAE99779C81E66552>
+  ], [
+    a schema:CreativeWork ;
+    schema:inLanguage "en", "nl" ;
+    rdfs:label "Type of secondary source:Publicatie"@nl, "Type of secondary source:Publication"@en ;
+    schema:name "NL-HlmNHA 476 1076"@en, "NL-HlmNHA 476 1076"@nl ;
+    schema:description "Documents concerning the handling of the distribution of objects from the former Royal Cabinet of Curiosities between the Rijks Ethnografisch Museum in Leiden and the Nederlandsch Museum van Geschiedenis en Kunst, 1885-1888."@en,
+      "Stukken betreffende de afwikkeling van de verdeling van kunstvoorwerpen uit het voormalig Koninklijk Kabinet van Zeldzaamheden tussen het Rijks Ethnographisch Museum te Leiden en het Nederlandsch Museum van Geschiedenis en Kunst, 1885-1888."@nl ;
+    schema:url <https://hdl.handle.net/21.12102/2472CF6620004E9E878802D9406CE688>
   ] ;
   rdfs:seeAlso <https://guides.example.org/guide5> ;
   rdfs:seeAlso [
@@ -291,6 +299,13 @@
     schema:description "Letters and postcards, mainly from artists, and other papers covering the period 1927-1948"@en,
       "Brieven en briefkaarten, voornamelijk van kunstenaars, en andere stukken over de periode 1927-1948"@nl ;
     schema:url <https://rkd.nl/nl/explore/collections/108>
+  ], [
+    a schema:CreativeWork ;
+    schema:inLanguage "nl" ; # Only in Dutch, for testing
+    rdfs:label "Type of secondary source:Publicatie"@nl ;
+    schema:name "RKD – Nederlands Instituut voor Kunstgeschiedenis / Leendert van Lier NL-HaRKD.0065"@nl ;
+    schema:description "Aantal uitnodigingen Kunstzaal van Lier, 1951-1953; aantal catalogi waaronder 'Mostra internazionale del Surrealismo', 1961; plakboek met foto's van werk van Bob Hanf; 2 foto's van kunstwerken, fotokopieën van brieven van onder anderen Eugène Brands, 1954-1955"@nl ;
+    schema:url <https://rkd.nl/explore/collections/65>
   ] ;
   rdfs:seeAlso <https://guides.example.org/guide4> ;
   rdfs:seeAlso [

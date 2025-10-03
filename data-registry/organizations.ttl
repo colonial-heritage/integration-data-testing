@@ -52,6 +52,18 @@
     schema:addressCountry "Nederland"@nl, "Netherlands"@en
   ] .
 
+<https://data.colonialcollections.nl/Bronbeek>
+  a schema:Organization ;
+  schema:name "Museum Bronbeek"@nl, "Bronbeek Museum"@en ;
+  schema:url <http://museumbronbeek.nl/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Velperweg 147" ;
+    schema:postalCode "6824 MB" ;
+    schema:addressLocality "Arnhem"@nl, "Arnhem"@en ;
+    schema:addressCountry "Nederland"@nl, "Netherlands"@en
+  ] .
+  
 <https://research.example.org/>
   a schema:Organization ;
   schema:name "Research Organisation"@en, "Onderzoeksinstelling"@nl .

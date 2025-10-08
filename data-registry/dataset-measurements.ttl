@@ -3,6 +3,7 @@
 ###############################
 
 @prefix cc-metrics: <https://data.colonialcollections.nl/metrics#> .
+@prefix cc-measurements: <https://data.colonialcollections.nl/measurements#> .
 @prefix dqv: <http://www.w3.org/ns/dqv#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 

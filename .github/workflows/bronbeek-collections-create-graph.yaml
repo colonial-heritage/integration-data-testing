@@ -1,9 +1,9 @@
 name: Update Search Graph with data from dataset 'bronbeek collections' in the Knowledge Graph
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 5,17 * * *"
+  workflow_dispatch: # Allow manual trigger
 
 # Run a single workflow at a time
 concurrency:

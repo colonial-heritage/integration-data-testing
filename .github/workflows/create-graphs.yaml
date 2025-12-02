@@ -4,6 +4,7 @@ on:
   push:
     branches: ["main"]
     paths: ["data-registry/**/*.ttl", "**/queries/**/*.rq"]
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   update-data-registry:
